@@ -1,4 +1,4 @@
-/* Default css file for jemdoc. */
+/* not-so-Default css file for jemdoc. */
 
 table#tlayout {
 	border: none;
@@ -8,7 +8,7 @@ table#tlayout {
 
 body {
 	background: white;
-	font-family: Georgia, serif;
+	font-family: "Computer Modern Sans", sans-serif;
 	padding-bottom: 8px;
 	margin: 0;
 }
@@ -52,7 +52,7 @@ tt {
 
 pre, tt {
 	font-size: 90%;
-	font-family: monaco, monospace;
+	font-family: "Computer Modern Typewriter", monaco, monospace;
 }
 
 a, a > tt {
