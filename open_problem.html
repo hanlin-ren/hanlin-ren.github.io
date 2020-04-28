@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Bright/cmun-bright.css"></link>
+<link rel="stylesheet" href="Computer Modern Fonts/Bright Semibold/cmun-bright-semibold.css"></link>
+<link rel="stylesheet" href="Computer Modern Fonts/Classical Serif Italic/cmun-bright-semibold.css"></link>
+<link rel="stylesheet" href="Computer Modern Fonts/Concrete/cmun-concrete.css"></link>
+<link rel="stylesheet" href="Computer Modern Fonts/Sans/cmun-sans.css"></link>
+<link rel="stylesheet" href="Computer Modern Fonts/Sans Demi-Condensed/cmun-sans-demicondensed.css"></link>
+<link rel="stylesheet" href="Computer Modern Fonts/Serif/cmun-serif.css"></link>
+<link rel="stylesheet" href="Computer Modern Fonts/Serif Slanted/cmun-serif-slanted.css"></link>
+<link rel="stylesheet" href="Computer Modern Fonts/Typewriter/cmun-typewriter.css"></link>
+<link rel="stylesheet" href="Computer Modern Fonts/Typewriter Light/cmun-typewriter-light.css"></link>
+<link rel="stylesheet" href="Computer Modern Fonts/Typewriter Variable/cmun-typewriter-variable.css"></link>
+<link rel="stylesheet" href="Computer Modern Fonts/Upright Italic/cmun-upright-italic.css"></link>
+<title>Open Problems</title>
+        <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' async>
+        </script>
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          showProcessingMessages: false,
+          TeX: { equationNumbers: { autoNumber: "AMS" } }
+        });
+        </script>
+<!--    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Hanlin Ren</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="open_problem.html" class="current">Open&nbsp;Problems</a></div>
+<div class="menu-item"><a href="files/CV/CV.pdf">CV</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Open Problems</h1>
+</div>
+<p><strong><span style="color:red">This webpage is experimental. Let's see whether it turns out to be a good idea in a few years.</span></strong></p>
+<p>This page lists a few open problems that I encounter at some time, and which I think are interesting enough for me to share on a webpage. And:</p>
+<ul>
+<li><p>These problems seem beyond my expertise, and currently I don't have any idea on how to make progress in them.</p>
+</li>
+<li><p>As far as I know, there are relatively few literature on these problems. (But in some cases I just didn't find the right paper&hellip;)</p>
+</li>
+<li><p>By putting them at this page doesn't mean I encourage you to solve (nor discourage you from solving) them.</p>
+</li>
+<li><p>Please feel free to drop me an email if you find or make some progress on them!</p>
+</li>
+</ul>
+<h2>Covering a clique by smaller cliques</h2>
+<ul>
+<li><p>Given positive integers \(m&gt;n\), e.g. \(m=2,000\) and \(n=500\), what is the smallest number of cliques \(K_n\) that are needed to cover the edges of \(K_m\)?</p>
+</li>
+<li><p>Equivalently, we have \(m\) people, and we want to create groups over these people. Each group should have size exactly \(n\), and any two people should be in some common group. How many group at minimum should we create?</p>
+</li>
+<li><p>Source: see a <a href="https://twitter.com/dfc7027894e168c/status/1031850669903368192" target=&ldquo;blank&rdquo;>tweet</a> of mine.</p>
+</li>
+<li><p>See also this <a href="https://mathoverflow.net/questions/254012/cover-a-complete-graph-by-smaller-complete-graphs/" target=&ldquo;blank&rdquo;>mathoverflow question</a>. I suspect this problem is very difficult.</p>
+</li>
+</ul>
+<h2>Deterministic construction of \((x,y)\)-families</h2>
+<ul>
+<li><p>Let \(x,y\) be small integers, and \({\cal U}\) be a universe of \(n\) elements. A collection of subsets \({\cal S}\) of \({\cal U}\) is an <b>\((x,y)\)-family</b> if for every \(X,Y\subseteq {\cal U}\) where \(|X|=x,|Y|=y\) and \(X\cap Y=\varnothing\), there is a set \(S\in{\cal S}\) such that \(X\subseteq S\) and \(Y\cap S=\varnothing\).</p>
+</li>
+<li><p>Let \(q=O\hspace{-2pt}\left(\frac{(x+y)^{x+y+1}}{x^xy^y}\log n\right)\), then there are \((x,y)\)-families of size \(q\). Actually, consider a subset \(S\) of \({\cal U}\) where every element is in \(S\) w.p. \(\frac{x}{x+y}\) independently. If we sample \(q\) such sets \(S_1,\dots,S_q\) and form a collection, then this collection is an \((x,y)\)-family with high probability.</p>
+</li>
+<li><p>The question is: Can we construct small \((x,y)\)-families <b>deterministically</b>? So it's essentially a derandomization question.</p>
+</li>
+<li><p>Motivation: Lemma 5.3 of [<a href="https://arxiv.org/pdf/2002.06812.pdf" target=&ldquo;blank&rdquo;>DGR&rsquo;20</a>]. Also see Theorem 2.1 of [<a href="https://arxiv.org/pdf/1101.5753.pdf" target=&ldquo;blank&rdquo;>DK&rsquo;11</a>].</p>
+</li>
+<li><p>I believe that the concept of \((x,y)\)-family could be very useful in algorithm design that <i>tolerants multiple failures</i>.</p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+        Page generated 2020-04-28 12:20:59 CST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>. Uses <a href="https://checkmyworking.com/cm-web-fonts/">Computer Modern Fonts</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
