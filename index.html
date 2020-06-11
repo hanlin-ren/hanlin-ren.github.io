@@ -26,9 +26,19 @@
           TeX: { equationNumbers: { autoNumber: "AMS" } }
         });
         </script>
-<!--    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
-</head>
-<body>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+          function toggle(pId) {
+            var e=document.getElementById(pId);
+            if (!e) return;
+            if (e.style.display == "none") {
+              e.style.display = "block"
+            } else {
+              e.style.display = "none"
+            }
+            return;
+          }
+        </script>
 <table summary="Table for page layout." id="tlayout">
 <tr valign="top">
 <td id="layout-menu">
@@ -44,30 +54,58 @@
 <p>I am a fourth-year undergraduate at <a href="http://iiis.tsinghua.edu.cn/en" target=&ldquo;blank&rdquo;>Institute for Interdisciplinary Information Sciences</a>, Tsinghua University.</p>
 <p>I am interested in Theoretical Computer Science, in particular <b>Algorithm Design</b> and <b>Computational Complexity</b>.</p>
 <p>Contact: <tt>rhl16 at mails dot tsinghua dot edu dot cn</tt>. <a href="https://twitter.com/dfc7027894e168c" target=&ldquo;blank&rdquo;>Twitter</a>.</p>
+<p><b>Note:</b> click paper titles to view paper summaries!</p>
 <h2>Publications</h2>
-<p><i>(Note: in Theoretical Computer Science, the list of authors are usually sorted in alphabetical order.)</i></p>
-<p><b>Approximating All-Pair Bounded-Leg Shortest Path and APSP-AF in Truly-Subcubic Time</b></p>
-<ul>
-<li><p><a href="http://iiis.tsinghua.edu.cn/en/duanr/" target=&ldquo;blank&rdquo;>Ran Duan</a>, <b>Hanlin Ren</b></p>
-</li>
-<li><p>In 45th International Colloquium on Automata, Languages, and Programming (ICALP &rsquo;18)</p>
-</li>
-<li><p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9046/" target=&ldquo;blank&rdquo;>Conference version</a>, <a href="files/slides/slides_icalp18.pdf" target=&ldquo;blank&rdquo;>Slides</a></p>
-</li>
-</ul>
-<p><b> Strong Average-Case Circuit Lower Bounds from Non-trivial Derandomization</b></p>
+<p><i>(In Theoretical Computer Science, the list of authors are usually sorted in alphabetical order.)</i></p>
+<p><span class="title" onclick="toggle('summary-strong-avg-lb')" style="cursor:pointer; u:hover">
+<b>
+Strong Average-Case Circuit Lower Bounds from Non-trivial Derandomization
+</b>
+</span><br>
+<span id="summary-strong-avg-lb" style="display:none; border:1pt solid; padding: 5px; width:800px; background-color:lavender">
+<b> Summary: </b> We show that for any integer \(k\), \(\mathsf{NQP} = \mathsf{NTIME}[2^{\mathrm{polylog}(n)}]\) cannot be \((1/2+1/2^{-\log^k n})\)-approximated by \(\mathsf{ACC}^0\circ\mathsf{THR}\) circuits of \(2^{\log^k n}\) size. Previously, it was unknown whether \(\mathsf{E}^{\mathsf{NP}}\) contains a function that is not \((1/2+1/\sqrt{n})\)-approximated by polynomial-size \(\mathsf{AC}^0[2]\) circuits. An interesting technical ingredient in this paper is a <b>hardness amplification</b> theorem with an <b>Approximate Sum</b> error corrector, borrowed from <a href='https://doi.org/10.1137/S0097539705446950'>[AIK'06]</a>.
+</span></p>
 <ul>
 <li><p><a href="http://www.mit.edu/~lijieche/" target=&ldquo;blank&rdquo;>Lijie Chen</a>, <b>Hanlin Ren</b></p>
 </li>
 <li><p>To appear in 52nd Annual ACM Symposium on Theory of Computing (STOC &rsquo;20)</p>
+<ul>
+<li><p><a href="https://dl.acm.org/citation.cfm?id=3384279" target=&ldquo;blank&rdquo;>Proceeding version</a> and <a href="files/slides/slides_STOC20_strong_avg_lb.pptx" target=&ldquo;blank&rdquo;>slides</a></p>
+</li></ul>
 </li>
-<li><p><a href="https://eccc.weizmann.ac.il/report/2020/010/" target=&ldquo;blank&rdquo;>ECCC version</a></p>
+<li><p><a href="https://eccc.weizmann.ac.il/report/2020/010/" target=&ldquo;blank&rdquo;>ECCC (full) version</a></p>
 </li>
 <li><p><a href="files/slides/slides_SIGMA_strong_avg_LB.pptx" target=&ldquo;blank&rdquo;>Slides</a> of a talk in Mar 26 2020, at <a href="http://sigma.ict.ac.cn" target=&ldquo;blank&rdquo;>SIGMA ICT CAS</a></p>
 </li>
 </ul>
+<p><span class="title" onclick="toggle('summary-APSP-AF')" style="cursor:pointer; u:hover">
+<b>
+Approximating All-Pair Bounded-Leg Shortest Path and APSP-AF in Truly-Subcubic Time
+</b>
+</span><br>
+<span id="summary-APSP-AF" style="display:none; border:1pt solid; padding: 5px; width:800px; background-color:lavender">
+<b> Summary: </b> Given a graph \(G\) in which each edge has length \(d\) and capacity \(f\), we want to answer the following kind of queries: Given \((u,v,f)\), what is the length of the shortest path from \(u\) to \(v\) that only uses edges with capacity at least \(f\)? For \((1+\epsilon)\)-approximating the answers, we design a data structure with \(\tilde{O}(n^{(\omega+3)/2}\epsilon^{-1.5}\log W)\) preprocessing time and \(O(\log\log_{\epsilon^{-1}}(nW))\) query time, where \(W\) is the maximum edge weight.
+</span></p>
+<ul>
+<li><p><a href="http://iiis.tsinghua.edu.cn/en/duanr/" target=&ldquo;blank&rdquo;>Ran Duan</a>, <b>Hanlin Ren</b></p>
+</li>
+<li><p>In 45th International Colloquium on Automata, Languages, and Programming (ICALP &rsquo;18)</p>
+<ul>
+<li><p><a href="http://drops.dagstuhl.de/opus/volltexte/2018/9046/" target=&ldquo;blank&rdquo;>Proceeding version</a> and <a href="files/slides/slides_icalp18.pdf" target=&ldquo;blank&rdquo;>slides</a></p>
+</li>
+</ul>
+
+</li>
+</ul>
 <h2>Manuscripts / In Submission</h2>
-<p><b>Approximate Distance Oracles Subject to Multiple Vertex Failures</b></p>
+<p><span class="title" onclick="toggle('summary-VSDO')" style="cursor:pointer; u:hover">
+<b>
+Approximate Distance Oracles Subject to Multiple Vertex Failures
+</b>
+</span><br>
+<span id="summary-VSDO" style="display:none; border:1pt solid; padding: 5px; width:800px; background-color:lavender">
+<b> Summary: </b> We design data structures that maintain approximate distances for weighted undirected graphs that tolerates multiple vertex failures. In particular, given any two vertices \(u,v\) and any set of \(d\) failed vertices \(D\), we can output an \((1+\epsilon)\)-approximation of the length of shortest path from \(u\) to \(v\) that avoids \(D\). Roughly speaking, for any constant number of failures, our structure uses \(O(n^{2+\delta})\) space and \(\operatorname{poly}(\log n,\epsilon^{-1})\) query time.
+</span></p>
 <ul>
 <li><p><a href="http://iiis.tsinghua.edu.cn/en/duanr/" target=&ldquo;blank&rdquo;>Ran Duan</a>, Yong Gu, <b>Hanlin Ren</b></p>
 </li>
@@ -76,7 +114,7 @@
 </ul>
 <div id="footer">
 <div id="footer-text">
-        Page generated 2020-04-29 23:38:16 CST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>. Uses <a href="https://checkmyworking.com/cm-web-fonts/">Computer Modern Fonts</a>.
+        Page generated 2020-06-11 19:34:36 CST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>. Uses <a href="https://checkmyworking.com/cm-web-fonts/">Computer Modern Fonts</a>.
 </div>
 </div>
 </td>

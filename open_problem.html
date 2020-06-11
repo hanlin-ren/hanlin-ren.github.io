@@ -26,9 +26,19 @@
           TeX: { equationNumbers: { autoNumber: "AMS" } }
         });
         </script>
-<!--    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
-</head>
-<body>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+          function toggle(pId) {
+            var e=document.getElementById(pId);
+            if (!e) return;
+            if (e.style.display == "none") {
+              e.style.display = "block"
+            } else {
+              e.style.display = "none"
+            }
+            return;
+          }
+        </script>
 <table summary="Table for page layout." id="tlayout">
 <tr valign="top">
 <td id="layout-menu">
@@ -79,7 +89,7 @@
 </ul>
 <div id="footer">
 <div id="footer-text">
-        Page generated 2020-04-29 23:38:16 CST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>. Uses <a href="https://checkmyworking.com/cm-web-fonts/">Computer Modern Fonts</a>.
+        Page generated 2020-06-11 19:34:36 CST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>. Uses <a href="https://checkmyworking.com/cm-web-fonts/">Computer Modern Fonts</a>.
 </div>
 </div>
 </td>
