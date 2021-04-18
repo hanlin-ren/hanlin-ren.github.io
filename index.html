@@ -51,7 +51,7 @@
 <div id="toptitle">
 <h1>Hanlin Ren</h1>
 </div>
-<p>I am a fifth(-and-hopefully-final)-year undergraduate at <a href="http://iiis.tsinghua.edu.cn/en" target=&ldquo;blank&rdquo;>Institute for Interdisciplinary Information Sciences</a>, Tsinghua University.</p>
+<p>I am a fifth-year undergraduate at <a href="http://iiis.tsinghua.edu.cn/en" target=&ldquo;blank&rdquo;>Institute for Interdisciplinary Information Sciences</a>, Tsinghua University.</p>
 <p>I am interested in Theoretical Computer Science, in particular <b>Algorithm Design</b> and <b>Computational Complexity</b>.</p>
 <p>[<a href="https://scholar.google.com/citations?user=d7WVkWYAAAAJ" target=&ldquo;blank&rdquo;>Google Scholar</a>], [<a href="https://dblp.org/pers/r/Ren:Hanlin.html" target=&ldquo;blank&rdquo;>DBLP</a>], [<a href="https://twitter.com/dfc7027894e168c" target=&ldquo;blank&rdquo;>Twitter</a>], <a href="https://orcid.org/0000-0002-7632-7574"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a></p>
 <p>Contact:</p>
@@ -70,7 +70,7 @@ Approximate Distance Oracles Subject to Multiple Vertex Failures
 </b>
 </span><br>
 <span id="summary-VSDO" style="display:none; border:1pt solid; padding: 5px; width:800px; background-color:lavender">
-<b> Summary: </b> We design data structures that maintain approximate distances for weighted undirected graphs, and tolerates multiple vertex failures. In particular, given any two vertices \(u,v\) and any set of \(d\) failed vertices \(D\), we can output an \((1+\epsilon)\)-approximation of the length of shortest path from \(u\) to \(v\) that avoids \(D\). Roughly speaking, for any constant number of failures, our structure uses \(O(n^{2.01})\) space and \(\operatorname{poly}(\log n,\epsilon^{-1})\) query time.
+<b> Summary: </b> We design data structures that maintain approximate distances for weighted undirected graphs, and tolerate multiple vertex failures. In particular, given any two vertices \(u,v\) and any set of \(d\) failed vertices \(D\), we can output an \((1+\epsilon)\)-approximation of the length of shortest path from \(u\) to \(v\) that avoids \(D\). Roughly speaking, for any constant number of failures, our structure uses \(O(n^{2.01})\) space and \(\operatorname{poly}(\log n,\epsilon^{-1})\) query time.
 </span></p>
 <ul>
 <li><p><a href="http://iiis.tsinghua.edu.cn/en/duanr/" target=&ldquo;blank&rdquo;>Ran Duan</a>, Yong Gu, <b>Hanlin Ren</b></p>
@@ -160,7 +160,7 @@ Constructing a Distance Sensitivity Oracle in \(O(n^{2.5794}M)\) Time
 </b>
 </span><br>
 <span id="summary-Faster-DSO" style="display:none; border:1pt solid; padding: 5px; width:800px; background-color:lavender">
-<b> Summary: </b> We improve the construction time of Distance Sensitivity Oracles for direct graphs to \(O(n^{2.5794}M)\), where \(n\) is the number of vertices, and the edge weights are integers in \([1, M]\). The new techniques involved are a faster algorithm for inverting a polynomial matrix modulo \(x^r\), and an algorithm that computes <i>consistent</i> shortest path trees in current APSP time.
+<b> Summary: </b> We improve the construction time of Distance Sensitivity Oracles for direct graphs to \(O(n^{2.5794}M)\), where \(n\) is the number of vertices, and the edge weights are integers in \([1, M]\). The new ingredients are a faster algorithm for inverting a polynomial matrix modulo \(x^r\), adapted from <a href='https://doi.org/10.1016/j.jco.2014.09.004'>[ZLS'15]</a>, and an algorithm that computes <i>consistent</i> shortest path trees in current APSP time.
 </span></p>
 <ul>
 <li><p>Yong Gu, <b>Hanlin Ren</b></p>
@@ -168,9 +168,35 @@ Constructing a Distance Sensitivity Oracle in \(O(n^{2.5794}M)\) Time
 <li><p><a href="https://arxiv.org/abs/2102.08569" target=&ldquo;blank&rdquo;>arXiv version</a></p>
 </li>
 </ul>
+<p><span class="title" onclick="toggle('summary-relativization-MCSP')" style="cursor:pointer; u:hover">
+<b>
+A Relativization Perspective on Meta-Complexity
+</b>
+</span><br>
+<span id="summary-relativization-MCSP" style="display:none; border:1pt solid; padding: 5px; width:800px; background-color:lavender">
+<b> Summary: </b> We investigate the role of relativization in the study of <i>meta-complexity</i> (e.g. minimum circuit size problem). Among other results, we find a relativized world where \({\rm search}\text{-}{\rm MCSP}\) is "much harder" than \({\rm MCSP}\), and another world where Levin's \({\rm Kt}\) complexity is computable in (deterministic) polynomial time.
+</span></p>
+<ul>
+<li><p><b>Hanlin Ren</b>, <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;blank&rdquo;>Rahul Santhanam</a></p>
+</li>
+</ul>
+<p><span class="title" onclick="toggle('summary-MKTP-OWF')" style="cursor:pointer; u:hover">
+<b>
+Hardness of \({\rm KT}\) Characterizes Parallel Cryptography
+</b>
+</span><br>
+<span id="summary-MKTP-OWF" style="display:none; border:1pt solid; padding: 5px; width:800px; background-color:lavender">
+<b> Summary: </b> A recent breakthrough <a href='http://ia.cr/2020/423'>[LP'20]</a> showed that one-way functions exist if and only if \({\rm K}^t\) is bounded-error hard on average, where \(t(n) &gt; 2n\) is any polynomial. Building on this result, we show that one-way functions can be computed in (uniform-)\({\sf NC}^0\) if and only if the \({\rm KT}\) complexity is hard on average. Our techniques also imply average-case reductions between the \({\rm KT}\) complexity and an \({\sf NC}^1\)-variant of the \({\rm K}^t\) complexity.
+</span></p>
+<ul>
+<li><p><b>Hanlin Ren</b>, <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;blank&rdquo;>Rahul Santhanam</a></p>
+</li>
+<li><p><a href="files/slides/slides_yaoclass_KT_OWF.pptx" target=&ldquo;blank&rdquo;>Slides</a> of a talk in Apr 18 2021, at Yaoclass seminar</p>
+</li>
+</ul>
 <div id="footer">
 <div id="footer-text">
-        Page generated 2021-02-18 12:07:08 CST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>. Uses <a href="https://checkmyworking.com/cm-web-fonts/">Computer Modern Fonts</a>.
+        Page generated 2021-04-18 22:31:41 CST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>. Uses <a href="https://checkmyworking.com/cm-web-fonts/">Computer Modern Fonts</a>.
 </div>
 </div>
 </td>
