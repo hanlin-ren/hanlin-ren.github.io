@@ -66,6 +66,34 @@
 </ul>
 <h2>Publications</h2>
 <p><i>(In theoretical computer science, the list of authors are usually sorted in alphabetical order.)</i></p>
+<p><b>Maintaining Exact Distances under Multiple Edge Failures</b>,
+with <a href="http://iiis.tsinghua.edu.cn/en/duanr/" target=&ldquo;blank&rdquo;>Ran Duan</a></p>
+<ul>
+<li><p>[<a href="https://arxiv.org/abs/2111.03360" target=&ldquo;blank&rdquo;>arXiv</a>],
+[<span class="title" onclick="toggle('summary-exact-distance')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
+</li>
+</ul>
+<p><span id="summary-exact-distance" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
+<b> Summary: </b> For every constant \(d\ge 1\) and undirected weighted graph \(G\), we present a data structure of size \(O(n^4)\) that supports the following query in constant time: Given a set of \(d\) edge failures and two vertices \(u, v\), what is the <b>exact</b> distance between \(u\) and \(v\) with the failed edges removed? This is the first non-trivial data structure for handling exact distances under multiple failures. For non-constant \(d\), our query time is \(d^{O(d)}\) and space complexity is \(O(dn^4)\).
+</span></p>
+<ul>
+<li><p>To appear in ACM Symposium on Theory of Computing (STOC) 2022</p>
+</li>
+</ul>
+<p><b>Robustness of Average-Case Meta-Complexity via Pseudorandomness</b>,
+with <a href="https://rahulilango.com/" target=&ldquo;blank&rdquo;>Rahul Ilango</a> and <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;blank&rdquo;>Rahul Santhanam</a></p>
+<ul>
+<li><p>[<a href="https://eccc.weizmann.ac.il/report/2021/082/" target=&ldquo;blank&rdquo;>Previous ECCC version</a>],
+[<span class="title" onclick="toggle('summary-samplable-Kolmogorov')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
+</li>
+</ul>
+<p><span id="summary-samplable-Kolmogorov" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
+<b> Summary: </b> We give reductions to show that the error-prone average-case complexity of many meta-complexity problems are very robust w.r.t. samplable distributions. For example, it is strongly (\(1/2+{\rm negl}(n)\)) average-case hard to approximate the (worst-case uncomputable) Kolmogorov complexity within a multiplicative factor of \(n^{0.9}\) if and only if it is weakly (\(1-1/{\rm poly}(n)\)) average-case hard to approximate the Kolmogorov complexity within an additive factor of \(\omega(\log n)\), both under some samplable distribution. Moreover, they are equivalent to the existence of one-way functions.
+</span></p>
+<ul>
+<li><p>To appear in ACM Symposium on Theory of Computing (STOC) 2022</p>
+</li>
+</ul>
 <p><b>A Relativization Perspective on Meta-Complexity</b>,
 with <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;blank&rdquo;>Rahul Santhanam</a></p>
 <ul>
@@ -202,31 +230,9 @@ with <a href="http://iiis.tsinghua.edu.cn/en/duanr/" target=&ldquo;blank&rdquo;>
 </li>
 </ul>
 <h2>Manuscripts / In Submission</h2>
-<p><b>Hardness on Any Samplable Distribution Suffices: New Characterizations of One-Way Functions by Meta-Complexity</b>,
-with <a href="https://rahulilango.com/" target=&ldquo;blank&rdquo;>Rahul Ilango</a> and <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;blank&rdquo;>Rahul Santhanam</a></p>
-<ul>
-<li><p>[<a href="https://eccc.weizmann.ac.il/report/2021/082/" target=&ldquo;blank&rdquo;>ECCC</a>],
-[<span class="title" onclick="toggle('summary-samplable-Kolmogorov')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-samplable-Kolmogorov" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> We show that the following items are equivalent to the existence of one-way functions:<br>
-\(\bullet\) average-case hardness of approximating Kolmogorov complexity (an <i>uncomputable</i> problem) over samplable distributions;<br>
-\(\bullet\) average-case hardness of approximating circuit complexity over \(n^{0.1}\)-locally samplable distributions.
-</span></p>
-<p><b>Maintaining Exact Distances under Multiple Edge Failures</b>,
-with <a href="http://iiis.tsinghua.edu.cn/en/duanr/" target=&ldquo;blank&rdquo;>Ran Duan</a></p>
-<ul>
-<li><p>[<a href="https://arxiv.org/abs/2111.03360" target=&ldquo;blank&rdquo;>arXiv</a>],
-[<span class="title" onclick="toggle('summary-exact-distance')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-exact-distance" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> For every constant \(d\ge 1\) and undirected weighted graph \(G\), we present a data structure of size \(O(n^4)\) that supports the following query in constant time: Given a set of \(d\) edge failures and two vertices \(u, v\), what is the <b>exact</b> distance between \(u\) and \(v\) with the failed edges removed? This is the first non-trivial data structure for handling exact distances under multiple failures. For non-constant \(d\), our query time is \(d^{O(d)}\) and space complexity is \(O(dn^4)\).
-</span></p>
 <div id="footer">
 <div id="footer-text">
-        Page generated 2021-12-19 16:35:31 GMT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>. Uses <a href="https://checkmyworking.com/cm-web-fonts/">Computer Modern Fonts</a>.
+        Page generated 2022-02-15 12:16:36 GMT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>. Uses <a href="https://checkmyworking.com/cm-web-fonts/">Computer Modern Fonts</a>.
 </div>
 </div>
 </td>
