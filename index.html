@@ -52,7 +52,7 @@
 <h1>Hanlin Ren</h1>
 </div>
 <p>I am a first-year DPhil student at the University of Oxford, where I'm very fortunate to be advised by <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;blank&rdquo;>Prof. Rahul Santhanam</a>. I am a member of <a href="https://www.chch.ox.ac.uk/" target=&ldquo;blank&rdquo;>Christ Church</a> and also a <a href="https://www.ox.ac.uk/clarendon" target=&ldquo;blank&rdquo;>Clarendon</a> scholar. Previously, I was an undergraduate student at <a href="http://iiis.tsinghua.edu.cn/en" target=&ldquo;blank&rdquo;>Institute for Interdisciplinary Information Sciences</a>, Tsinghua University.</p>
-<p>I have a broad interest in theoretical computer science. Currently, I am interested in <b>computational complexity</b>, which studies the limitations of efficient computation. Some topics of complexity theory that I find fascinating are <b>circuit complexity</b>, <b>meta-complexity</b>, and <b>average-case complexity</b>.</p>
+<p>I have a broad interest in theoretical computer science. Currently, I am interested in <b>computational complexity</b>, which studies the limitations of efficient computation. Some topics of complexity theory that I find fascinating are <b>circuit complexity</b>, <b>meta-complexity</b>, <b>explicit constructions</b>, and <b>average-case complexity</b>.</p>
 <p>At Tsinghua, I was advised by <a href="https://iiis.tsinghua.edu.cn/en/duanr/" target=&ldquo;blank&rdquo;>Prof. Ran Duan</a> and worked on <b>graph algorithms</b>. One emphasis of my research was to design shortest-path data structures for graphs in the presence of failures.</p>
 <p>[<a href="https://scholar.google.com/citations?user=d7WVkWYAAAAJ" target=&ldquo;blank&rdquo;>Google Scholar</a>], [<a href="https://dblp.org/pers/r/Ren:Hanlin.html" target=&ldquo;blank&rdquo;>DBLP</a>], [<a href="https://twitter.com/dfc7027894e168c" target=&ldquo;blank&rdquo;>Twitter</a>], [<a href="https://orcid.org/0000-0002-7632-7574" target=&ldquo;blank&rdquo;>ORCID</a>]</p>
 <p>Contact:</p>
@@ -66,10 +66,27 @@
 </ul>
 <h2>Publications</h2>
 <p><i>(In theoretical computer science, the list of authors are usually sorted in alphabetical order.)</i></p>
+<p><b>On the Range Avoidance Problem for Circuits</b>, with <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;blank&rdquo;>Rahul Santhanam</a> and <a href="https://zhikunwang.com/" target=&ldquo;blank&rdquo;>Zhikun Wang</a></p>
+<ul>
+<li><p>[<a href="https://eccc.weizmann.ac.il/report/2022/048/" target=&ldquo;blank&rdquo;>ECCC</a>],
+[<a href="https://twitter.com/dfc7027894e168c/status/1511089149398470666" target=&ldquo;blank&rdquo;>Twitter</a>],
+[<a href="files/slides/poster_avoidance.pdf" target=&ldquo;blank&rdquo;>Poster</a> at Oxford Computer Science Conference],
+[<a href="files/slides/slides_ICMS_avoidance" target=&ldquo;blank&rdquo;>Slides</a> at ICMS (focused on proof complexity)],
+[<span class="title" onclick="toggle('summary-Avoidance')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
+</li>
+</ul>
+<p><span id="summary-Avoidance" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
+<b> Summary: </b> In the <b>range avoidance</b> problem, we are given a circuit \(C:\{0, 1\}^n\to \{0, 1\}^\ell\) where \(\ell &gt; n\), and we want to find a string \(y\in\{0, 1\}^\ell\) that is not in the range of \(C\). Using Ryan Williams's Algorithmic Method for proving circuit lower bounds, we show that derandomisation of certain data structures would imply an \({\sf FP}^{\sf NP}\) algorithm for solving this problem. As an application of this result, we characterise circuit lower bounds for \({\sf E}^{\sf NP}\) by non-trivial derandomisation algorithms <b>with \({\sf E}^{\sf NP}\) preprocessing</b>.
+</span></p>
+<ul>
+<li><p>To appear in IEEE Symposium on Foundations of Computer Science (FOCS) 2022</p>
+</li>
+</ul>
 <p><b>Maintaining Exact Distances under Multiple Edge Failures</b>,
 with <a href="http://iiis.tsinghua.edu.cn/en/duanr/" target=&ldquo;blank&rdquo;>Ran Duan</a></p>
 <ul>
 <li><p>[<a href="https://arxiv.org/abs/2111.03360" target=&ldquo;blank&rdquo;>arXiv</a>],
+[<a href="https://twitter.com/dfc7027894e168c/status/1457648288585424896" target=&ldquo;blank&rdquo;>Twitter</a>],
 [<span class="title" onclick="toggle('summary-exact-distance')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
 </li>
 </ul>
@@ -77,7 +94,12 @@ with <a href="http://iiis.tsinghua.edu.cn/en/duanr/" target=&ldquo;blank&rdquo;>
 <b> Summary: </b> For every constant \(d\ge 1\) and undirected weighted graph \(G\), we present a data structure of size \(O(n^4)\) that supports the following query in constant time: Given a set of \(d\) edge failures and two vertices \(u, v\), what is the <b>exact</b> distance between \(u\) and \(v\) with the failed edges removed? This is the first non-trivial data structure for handling exact distances under multiple failures. For non-constant \(d\), our query time is \(d^{O(d)}\) and space complexity is \(O(dn^4)\).
 </span></p>
 <ul>
-<li><p>To appear in ACM Symposium on Theory of Computing (STOC) 2022</p>
+<li><p>In ACM Symposium on Theory of Computing (STOC) 2022</p>
+<ul>
+<li><p><a href="https://doi.org/10.1145/3519935.3520002" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/stoc22_exact_distance_oracle.pdf" target=&ldquo;blank&rdquo;>local</a>), <a href="files/slides/slides_STOC22_exact_distance_oracle_long.pptx" target=&ldquo;blank&rdquo;>slides (long)</a>, <a href="files/slides_STOC22_exact_distance_oracle_short" target=&ldquo;blank&rdquo;>slides (short)</a>, and <a href="http://youtu.be/B1wMXgTCy8o" target=&ldquo;blank&rdquo;>video</a>.</p>
+</li>
+</ul>
+
 </li>
 </ul>
 <p><b>Robustness of Average-Case Meta-Complexity via Pseudorandomness</b>,
@@ -91,7 +113,12 @@ with <a href="https://rahulilango.com/" target=&ldquo;blank&rdquo;>Rahul Ilango<
 <b> Summary: </b> We give reductions to show that the error-prone average-case complexity of many meta-complexity problems are very robust w.r.t. samplable distributions. For example, it is strongly (\(1/2+{\rm negl}(n)\)) average-case hard to approximate the (worst-case uncomputable) Kolmogorov complexity within a multiplicative factor of \(n^{0.9}\) if and only if it is weakly (\(1-1/{\rm poly}(n)\)) average-case hard to approximate the Kolmogorov complexity within an additive factor of \(\omega(\log n)\), both under some samplable distribution. Moreover, they are equivalent to the existence of one-way functions.
 </span></p>
 <ul>
-<li><p>To appear in ACM Symposium on Theory of Computing (STOC) 2022</p>
+<li><p>In ACM Symposium on Theory of Computing (STOC) 2022</p>
+<ul>
+<li><p><a href="https://doi.org/10.1145/3519935.3520051" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/stoc22_robustness.pdf" target=&ldquo;blank&rdquo;>local</a>).</p>
+</li>
+</ul>
+
 </li>
 </ul>
 <p><b>A Relativization Perspective on Meta-Complexity</b>,
@@ -107,7 +134,7 @@ with <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;bla
 <ul>
 <li><p>In International Symposium on Theoretical Aspects of Computer Science (STACS) 2022</p>
 <ul>
-<li><p><a href="https://drops.dagstuhl.de/opus/volltexte/2022/15864/" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/stacs22_relativized_MCSP.pdf" target=&ldquo;blank&rdquo;>local</a>), <a href="files/slides/slides_STACS22_relativized_MCSP_full.pdf" target=&ldquo;blank&rdquo;>slides</a>, <a href="http://youtu.be/YJy2si_9TP8" target=&ldquo;blank&rdquo;>teaser video</a>, and <a href="files/slides/slides_STACS22_relativized_MCSP_teaser.pdf" target=&ldquo;blank&rdquo;>teaser slide</a></p>
+<li><p><a href="https://drops.dagstuhl.de/opus/volltexte/2022/15864/" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/stacs22_relativized_MCSP.pdf" target=&ldquo;blank&rdquo;>local</a>), <a href="files/slides/slides_STACS22_relativized_MCSP_full.pdf" target=&ldquo;blank&rdquo;>slides</a>, <a href="http://youtu.be/YJy2si_9TP8" target=&ldquo;blank&rdquo;>teaser video</a>, and <a href="files/slides/slides_STACS22_relativized_MCSP_teaser.pdf" target=&ldquo;blank&rdquo;>teaser slide</a>.</p>
 </li>
 </ul>
 
@@ -120,6 +147,7 @@ with <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;bla
 [<a href="https://ia.cr/2021/1076" target=&ldquo;blank&rdquo;>eprint</a>],
 [<a href="files/slides/slides_yaoclass_KT_OWF.pptx" target=&ldquo;blank&rdquo;>Slides</a> at Yaoclass seminar],
 [<a href="files/slides/slides_oxford_warwick_KT_OWF.pptx" target=&ldquo;blank&rdquo;>Slides</a> at Oxford-Warwick],
+[<a href="files/slides/slides_DIMACS_KT_OWF.pptx" target=&ldquo;blank&rdquo;>Slides</a> at DIMACS meta-complexity workshop],
 [<span class="title" onclick="toggle('summary-MKTP-OWF')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
 </li>
 </ul>
@@ -129,7 +157,7 @@ with <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;bla
 <ul>
 <li><p>In Computational Complexity Conference (CCC) 2021, <u>invited to the ToC special issue</u></p>
 <ul>
-<li><p><a href="https://drops.dagstuhl.de/opus/volltexte/2021/14309/" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/ccc21_KT_OWF.pdf" target=&ldquo;blank&rdquo;>local</a>), <a href="files/slides/slides_CCC21_KT_OWF_long.pptx" target=&ldquo;blank&rdquo;>slides (long)</a>, <a href="files/slides/slides_CCC21_KT_OWF_short.pptx" target=&ldquo;blank&rdquo;>slides (short)</a>, and <a href="http://youtu.be/esFxj1cNLCE" target=&ldquo;blank&rdquo;>video</a></p>
+<li><p><a href="https://drops.dagstuhl.de/opus/volltexte/2021/14309/" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/ccc21_KT_OWF.pdf" target=&ldquo;blank&rdquo;>local</a>), <a href="files/slides/slides_CCC21_KT_OWF_long.pptx" target=&ldquo;blank&rdquo;>slides (long)</a>, <a href="files/slides/slides_CCC21_KT_OWF_short.pptx" target=&ldquo;blank&rdquo;>slides (short)</a>, and <a href="http://youtu.be/esFxj1cNLCE" target=&ldquo;blank&rdquo;>video</a>.</p>
 </li>
 </ul>
 
@@ -139,6 +167,7 @@ with <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;bla
 with Yong Gu</p>
 <ul>
 <li><p>[<a href="https://arxiv.org/abs/2102.08569" target=&ldquo;blank&rdquo;>arXiv</a>],
+[<a href="https://twitter.com/dfc7027894e168c/status/1362251312285372417" target=&ldquo;blank&rdquo;>Twitter</a>],
 [<a href="files/slides/poster_faster_DSO.pdf" target=&ldquo;blank&rdquo;>Poster</a> at the 10-th year anniversary of IIIS],
 [<a href="files/slides/slides_IJTCS21_faster_DSO.pptx" target=&ldquo;blank&rdquo;>Slides</a> at IJTCS 2021],
 [<a href="files/slides/slides_yaoclass_faster_DSO.pptx" target=&ldquo;blank&rdquo;>Slides</a> at Yaoclass seminar],
@@ -151,7 +180,7 @@ with Yong Gu</p>
 <ul>
 <li><p>In International Colloquium on Automata, Languages and Programming (ICALP) 2021</p>
 <ul>
-<li><p><a href="https://drops.dagstuhl.de/opus/volltexte/2021/14145/" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/icalp21_faster_DSO.pdf" target=&ldquo;blank&rdquo;>local</a>), <a href="files/slides/slides_ICALP21_faster_DSO.pptx" target=&ldquo;blank&rdquo;>slides</a>, and <a href="http://youtu.be/uIFoucab6d4" target=&ldquo;blank&rdquo;>video</a></p>
+<li><p><a href="https://drops.dagstuhl.de/opus/volltexte/2021/14145/" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/icalp21_faster_DSO.pdf" target=&ldquo;blank&rdquo;>local</a>), <a href="files/slides/slides_ICALP21_faster_DSO.pptx" target=&ldquo;blank&rdquo;>slides</a>, and <a href="http://youtu.be/uIFoucab6d4" target=&ldquo;blank&rdquo;>video</a>.</p>
 </li>
 </ul>
 
@@ -161,6 +190,7 @@ with Yong Gu</p>
 with <a href="http://iiis.tsinghua.edu.cn/en/duanr/" target=&ldquo;blank&rdquo;>Ran Duan</a> and Yong Gu</p>
 <ul>
 <li><p>[<a href="https://arxiv.org/abs/2002.06812" target=&ldquo;blank&rdquo;>arXiv</a>],
+[<a href="https://twitter.com/dfc7027894e168c/status/1229759316476907520" target=&ldquo;blank&rdquo;>Twitter</a>],
 [<a href="files/slides/slides_yaoclass_VSDO.pptx" target=&ldquo;blank&rdquo;>Slides</a> at Yaoclass seminar],
 [<span class="title" onclick="toggle('summary-VSDO')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
 </li>
@@ -180,6 +210,7 @@ with <a href="http://iiis.tsinghua.edu.cn/en/duanr/" target=&ldquo;blank&rdquo;>
 <p><b>Improved Distance Sensitivity Oracles with Subcubic Preprocessing Time</b></p>
 <ul>
 <li><p>[<a href="https://arxiv.org/abs/2007.11495" target=&ldquo;blank&rdquo;>arXiv</a>],
+[<a href="https://twitter.com/dfc7027894e168c/status/1286173398238785539" target=&ldquo;blank&rdquo;>Twitter</a>],
 [<a href="https://doi.org/10.1016/j.jcss.2021.08.005" target=&ldquo;blank&rdquo;>JCSS</a>],
 [<span class="title" onclick="toggle('summary-subcubic-DSO')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
 </li>
@@ -200,6 +231,7 @@ with <a href="http://iiis.tsinghua.edu.cn/en/duanr/" target=&ldquo;blank&rdquo;>
 with <a href="http://www.mit.edu/~lijieche/" target=&ldquo;blank&rdquo;>Lijie Chen</a></p>
 <ul>
 <li><p>[<a href="https://eccc.weizmann.ac.il/report/2020/010/" target=&ldquo;blank&rdquo;>ECCC</a>],
+[<a href="https://doi.org/10.1137/20M1364886" target=&ldquo;blank&rdquo;>SICOMP</a>],
 [<a href="files/slides/slides_SIGMA_strong_avg_LB.pptx" target=&ldquo;blank&rdquo;>Slides</a> at SIGMA ICT CAS],
 [<span class="title" onclick="toggle('summary-strong-avg-lb')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
 </li>
@@ -235,18 +267,9 @@ with <a href="http://iiis.tsinghua.edu.cn/en/duanr/" target=&ldquo;blank&rdquo;>
 </li>
 </ul>
 <h2>Manuscripts / In Submission</h2>
-<p><b>On the Range Avoidance Problem for Circuits</b>, with <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;blank&rdquo;>Rahul Santhanam</a> and <a href="https://zhikunwang.com/" target=&ldquo;blank&rdquo;>Zhikun Wang</a></p>
-<ul>
-<li><p>[<a href="https://eccc.weizmann.ac.il/report/2022/048/" target=&ldquo;blank&rdquo;>ECCC</a>],
-[<span class="title" onclick="toggle('summary-Avoidance')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-Avoidance" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> In the <b>range avoidance</b> problem, we are given a circuit \(C:\{0, 1\}^n\to \{0, 1\}^\ell\) where \(\ell &gt; n\), and we want to find a string \(y\in\{0, 1\}^\ell\) that is not in the range of \(C\). Using Ryan Williams's Algorithmic Method for proving circuit lower bounds, we show that derandomisation of certain data structures would imply an \({\sf FP}^{\sf NP}\) algorithm for solving this problem. As an application of this result, we characterise circuit lower bounds for \({\sf E}^{\sf NP}\) by non-trivial derandomisation algorithms <b>with \({\sf E}^{\sf NP}\) preprocessing</b>.
-</span></p>
 <div id="footer">
 <div id="footer-text">
-        Page generated 2022-04-04 23:04:40 BST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>. Uses <a href="https://checkmyworking.com/cm-web-fonts/">Computer Modern Fonts</a>.
+        Page generated 2022-07-06 15:53:27 BST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>. Uses <a href="https://checkmyworking.com/cm-web-fonts/">Computer Modern Fonts</a>.
 </div>
 </div>
 </td>
