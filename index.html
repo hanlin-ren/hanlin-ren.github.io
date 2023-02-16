@@ -51,6 +51,10 @@
 <div id="toptitle">
 <h1>Hanlin Ren</h1>
 </div>
+<p><div style="float: right;"></p>
+<p><img src="files/photos/photo.jpg" alt="My photo" width="300"></p>
+<p>Photo taken by <a href="https://www.rahulilango.com/" target=&ldquo;blank&rdquo;>Rahul Ilango</a></p>
+<p></div></p>
 <p>I am a second-year DPhil student at the University of Oxford, where I'm very fortunate to be advised by <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;blank&rdquo;>Prof. Rahul Santhanam</a>. I am a member of <a href="https://www.chch.ox.ac.uk/" target=&ldquo;blank&rdquo;>Christ Church</a> and also a <a href="https://www.ox.ac.uk/clarendon" target=&ldquo;blank&rdquo;>Clarendon</a> scholar. Previously, I was an undergraduate student at <a href="http://iiis.tsinghua.edu.cn/en" target=&ldquo;blank&rdquo;>Institute for Interdisciplinary Information Sciences</a>, Tsinghua University.</p>
 <p>I have a broad interest in theoretical computer science. Currently, I am interested in <b>computational complexity</b>, which studies the limitations of efficient computation. Some topics of complexity theory that I find fascinating are <b>circuit complexity</b>, <b>meta-complexity</b>, <b>explicit constructions</b>, and <b>average-case complexity</b>.</p>
 <p>At Tsinghua, I was advised by <a href="https://iiis.tsinghua.edu.cn/en/duanr/" target=&ldquo;blank&rdquo;>Prof. Ran Duan</a> and worked on <b>graph algorithms</b>. One emphasis of my research was to design shortest-path data structures for graphs in the presence of failures.</p>
@@ -65,6 +69,36 @@
 </ul>
 <h2>Publications</h2>
 <p><i>(In theoretical computer science, the list of authors are usually sorted in alphabetical order.)</i></p>
+<p><b>Range Avoidance, Remote Point, and Hard Partial Truth Table via Satisfying-Pairs Algorithms</b>, with Yeyuan Chen, <a href="https://about.yizhihuang.org/" target=&ldquo;blank&rdquo;>Yizhi Huang</a> and <a href="https://ljt12138.github.io/" target=&ldquo;blank&rdquo;>Jiatu Li</a></p>
+<ul>
+<li><p>[<a href="files/slides/slides_derand_workshop_avoidance.pptx" target=&ldquo;blank&rdquo;>Slides</a> and <a href="https://vimeo.com/user39621409/review/772183410/1201f3a1d4" target=&ldquo;blank&rdquo;>video</a> at FOCS 2022 Workshop on New Directions in Derandomization],
+[<a href="files/slides/slides_yaoclass_avoidance.pptx" target=&ldquo;blank&rdquo;>Slides</a> at Yaoclass seminar],
+[<a href="files/slides/slides_meta-complexity_avoidance.pptx" target=&ldquo;blank&rdquo;>Slides</a> and <a href="https://youtu.be/pd45Av1iTlw" target=&ldquo;blank&rdquo;>video</a> at Meta-Complexity program at Simons institute],
+[<span class="title" onclick="toggle('summary-avoid2')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
+</li>
+</ul>
+<p><span id="summary-avoid2" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
+<b> Summary: </b> We show that a non-trivial algorithm for <b>Satisfying-Pairs</b> implies an \(\mathsf{FP}^{\mathsf{NP}}\)-algorithm for the range avoidance problem. Actually, it implies an \(\mathsf{FP}^{\mathsf{NP}}\)-algorithm for the <b>Remote Point Problem</b>: Given a circuit \(C:\{0, 1\}^n \to \{0, 1\}^\ell\) where \(\ell \gg n\), find a string \(y\in\{0, 1\}^\ell\) such that for every \(x\in\{0, 1\}^n\), the Hamming distance between \(C(x)\) and \(y\) is large.
+<br>
+As a corollary, we present \(\mathsf{FP}^{\mathsf{NP}}\) algorithms for \(\mathsf{ACC}^0\)-\(\mathrm{RemotePoint}\), as well as the following problem called \(\mathsf{ACC}^0\)-\(\mathrm{PartialAvgHard}\): given strings \(x_1, x_2, \dots, x_L \in \{0, 1\}^n\), find bits \(y_1, y_2, \dots, y_L \in \{0, 1\}\) such that the partial function mapping \(x_i\) to \(y_i\) cannot be approximated by \(\mathrm{poly}(n)\)-size \(\mathsf{ACC}^0\) circuits. The parameters of our results match the best circuit lower bounds for \(\mathsf{ACC}^0\) <a href="https://eccc.weizmann.ac.il/report/2020/150">[CLW'20]</a>.
+</span></p>
+<ul>
+<li><p>To appear in ACM Symposium on Theory of Computing (STOC) 2023</p>
+</li>
+</ul>
+<p><b>\(\mathbf{NP}\)-Hardness of Approximating Meta-Complexity: A Cryptographic Approach</b>, with <a href="https://about.yizhihuang.org/" target=&ldquo;blank&rdquo;>Yizhi Huang</a> and <a href="https://www.rahulilango.com/" target=&ldquo;blank&rdquo;>Rahul Ilango</a></p>
+<ul>
+<li><p>[Rahul's <a href="https://youtu.be/vG-VpTEdCBc" target=&ldquo;blank&rdquo;>talk</a> at Meta-Complexity program at Simons Institute],
+[<span class="title" onclick="toggle('summary-GapMOCSP')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
+</li>
+</ul>
+<p><span id="summary-GapMOCSP" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
+<b> Summary: </b> We propose a <b>cryptographic</b> approach for establishing \(\mathsf{NP}\)-hardness of <i>approximating</i> meta-complexity problems. Assuming subexponentially-secure indistinguishability obfuscation, we show nearly optimal \(\mathsf{NP}\)-hardness of approximating conditional time-bounded Kolmogorov complexity (\(\mathrm{K}(x\mid y)\)) via a <i>standard, randomised, black-box</i> reduction. Unconditionally, we show improved \(\mathsf{NP}\)-hardness of approximating <i>oracle circuit complexity</i> (\(\mathrm{MOCSP}\)), by constructing an oracle world with (unconditionally) secure witness encryption.
+</span></p>
+<ul>
+<li><p>To appear in ACM Symposium on Theory of Computing (STOC) 2023</p>
+</li>
+</ul>
 <p><b>On the Range Avoidance Problem for Circuits</b>, with <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;blank&rdquo;>Rahul Santhanam</a> and <a href="https://zhikunwang.com/" target=&ldquo;blank&rdquo;>Zhikun Wang</a></p>
 <ul>
 <li><p>[<a href="https://eccc.weizmann.ac.il/report/2022/048/" target=&ldquo;blank&rdquo;>ECCC</a>],
@@ -81,7 +115,7 @@
 <ul>
 <li><p>In IEEE Symposium on Foundations of Computer Science (FOCS) 2022</p>
 <ul>
-<li><p><a href="https://doi.org/10.1109/FOCS54457.2022.00067" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/focs22_avoidance.pdf" target=&ldquo;blank&rdquo;>local</a>) and <a href="files/slides/slides_FOCS22_avoidance.pptx" target=&ldquo;blank&rdquo;>slides</a>.</p>
+<li><p><a href="https://doi.org/10.1109/FOCS54457.2022.00067" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/focs22_avoidance.pdf" target=&ldquo;blank&rdquo;>local</a>), <a href="files/slides/slides_FOCS22_avoidance.pptx" target=&ldquo;blank&rdquo;>slides</a>, and <a href="https://vimeo.com/user39621409/review/771296149/46488425a3" target=&ldquo;blank&rdquo;>video</a>.</p>
 </li>
 </ul>
 
@@ -152,7 +186,7 @@ with <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;bla
 [<a href="https://ia.cr/2021/1076" target=&ldquo;blank&rdquo;>eprint</a>],
 [<a href="files/slides/slides_yaoclass_KT_OWF.pptx" target=&ldquo;blank&rdquo;>Slides</a> at Yaoclass seminar],
 [<a href="files/slides/slides_oxford_warwick_KT_OWF.pptx" target=&ldquo;blank&rdquo;>Slides</a> at Oxford-Warwick],
-[<a href="files/slides/slides_DIMACS_KT_OWF.pptx" target=&ldquo;blank&rdquo;>Slides</a> at DIMACS meta-complexity workshop],
+[<a href="files/slides/slides_DIMACS_KT_OWF.pptx" target=&ldquo;blank&rdquo;>Slides</a> and <a href="http://youtu.be/hZZaEuumtTY" target=&ldquo;blank&rdquo;>video</a> at DIMACS meta-complexity workshop],
 [<span class="title" onclick="toggle('summary-MKTP-OWF')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
 </li>
 </ul>
@@ -271,23 +305,9 @@ with <a href="http://iiis.tsinghua.edu.cn/en/duanr/" target=&ldquo;blank&rdquo;>
 
 </li>
 </ul>
-<h2>Manuscripts / In Submission</h2>
-<p><b>Range Avoidance, Remote Point, and Hard Partial Truth Table via Satisfying-Pairs Algorithms</b>, with Yeyuan Chen, <a href="https://about.yizhihuang.org/" target=&ldquo;blank&rdquo;>Yizhi Huang</a> and <a href="https://ljt12138.github.io/" target=&ldquo;blank&rdquo;>Jiatu Li</a></p>
-<ul>
-<li><p>[<a href="files/slides/slides_derand_workshop_avoidance.pptx" target=&ldquo;blank&rdquo;>Slides</a> at FOCS 2022 Workshop on New Directions in Derandomization],
-[<a href="files/slides/slides_yaoclass_avoidance.pptx" target=&ldquo;blank&rdquo;>Slides</a> at Yaoclass seminar],
-[<span class="title" onclick="toggle('summary-avoid2')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-avoid2" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> We show that a non-trivial algorithm for <b>Satisfying-Pairs</b> implies an \(\mathsf{FP}^{\mathsf{NP}}\)-algorithm for the range avoidance problem. Actually, it implies an \(\mathsf{FP}^{\mathsf{NP}}\)-algorithm for the <b>Remote Point Problem</b>: Given a circuit \(C:\{0, 1\}^n \to \{0, 1\}^\ell\) where \(\ell \gg n\), find a string \(y\in\{0, 1\}^\ell\) such that for every \(x\in\{0, 1\}^n\), the Hamming distance between \(C(x)\) and \(y\) is large.
-<br>
-As a corollary, we present \(\mathsf{FP}^{\mathsf{NP}}\) algorithms for \(\mathsf{ACC}^0\)-\(\mathrm{RemotePoint}\), as well as the following problem called \(\mathsf{ACC}^0\)-\(\mathrm{PartialAvgHard}\): given strings \(x_1, x_2, \dots, x_L \in \{0, 1\}^n\), find bits \(y_1, y_2, \dots, y_L \in \{0, 1\}\) such that the partial function mapping \(x_i\) to \(y_i\) cannot be approximated by \(\mathrm{poly}(n)\)-size \(\mathsf{ACC}^0\) circuits. The parameters of our results match the best circuit lower bounds for \(\mathsf{ACC}^0\) <a href="https://eccc.weizmann.ac.il/report/2020/150">[CLW'20]</a>.
-</span></p>
-<p><b>\(\mathbf{NP}\)-Hardness of Approximating Meta-Complexity: A Cryptographic Approach</b>, with <a href="https://about.yizhihuang.org/" target=&ldquo;blank&rdquo;>Yizhi Huang</a> and <a href="https://www.rahulilango.com/" target=&ldquo;blank&rdquo;>Rahul Ilango</a></p>
 <div id="footer">
 <div id="footer-text">
-        Page generated 2023-01-09 22:32:58 GMT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>. Uses <a href="https://checkmyworking.com/cm-web-fonts/">Computer Modern Fonts</a>.
+        Page generated 2023-02-15 17:33:13 PST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>. Uses <a href="https://checkmyworking.com/cm-web-fonts/">Computer Modern Fonts</a>.
 </div>
 </div>
 </td>
