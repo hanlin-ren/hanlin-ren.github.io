@@ -2,49 +2,47 @@
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta name="generator" content="generate.py" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<link rel="stylesheet" href="Computer Modern Fonts/Bright/cmun-bright.css"></link>
-<link rel="stylesheet" href="Computer Modern Fonts/Bright Semibold/cmun-bright-semibold.css"></link>
-<link rel="stylesheet" href="Computer Modern Fonts/Classical Serif Italic/cmun-bright-semibold.css"></link>
-<link rel="stylesheet" href="Computer Modern Fonts/Concrete/cmun-concrete.css"></link>
-<link rel="stylesheet" href="Computer Modern Fonts/Sans/cmun-sans.css"></link>
-<link rel="stylesheet" href="Computer Modern Fonts/Sans Demi-Condensed/cmun-sans-demicondensed.css"></link>
-<link rel="stylesheet" href="Computer Modern Fonts/Serif/cmun-serif.css"></link>
-<link rel="stylesheet" href="Computer Modern Fonts/Serif Slanted/cmun-serif-slanted.css"></link>
-<link rel="stylesheet" href="Computer Modern Fonts/Typewriter/cmun-typewriter.css"></link>
-<link rel="stylesheet" href="Computer Modern Fonts/Typewriter Light/cmun-typewriter-light.css"></link>
-<link rel="stylesheet" href="Computer Modern Fonts/Typewriter Variable/cmun-typewriter-variable.css"></link>
-<link rel="stylesheet" href="Computer Modern Fonts/Upright Italic/cmun-upright-italic.css"></link>
+<link rel="stylesheet" href="academic.css" type="text/css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Bright/cmun-bright.css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Bright Semibold/cmun-bright-semibold.css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Classical Serif Italic/cmun-bright-semibold.css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Concrete/cmun-concrete.css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Sans/cmun-sans.css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Sans Demi-Condensed/cmun-sans-demicondensed.css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Serif/cmun-serif.css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Serif Slanted/cmun-serif-slanted.css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Typewriter/cmun-typewriter.css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Typewriter Light/cmun-typewriter-light.css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Typewriter Variable/cmun-typewriter-variable.css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Upright Italic/cmun-upright-italic.css" />
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+function toggle(id) {
+  var e = document.getElementById(id);
+  if (!e) return;
+  e.style.display = (e.style.display === "none") ? "block" : "none";
+}
+</script>
 <title>Hanlin Ren</title>
-        <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' async>
-        </script>
-        <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-          showProcessingMessages: false,
-          TeX: { equationNumbers: { autoNumber: "AMS" } }
-        });
-        </script>
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script>
-          function toggle(pId) {
-            var e=document.getElementById(pId);
-            if (!e) return;
-            if (e.style.display == "none") {
-              e.style.display = "block"
-            } else {
-              e.style.display = "none"
-            }
-            return;
-          }
-        </script>
+</head>
+<body>
 <table summary="Table for page layout." id="tlayout">
 <tr valign="top">
 <td id="layout-menu">
 <div class="menu-category">Hanlin Ren</div>
 <div class="menu-item"><a href="index.html" class="current">Home</a></div>
-<div class="menu-item"><a href="open_problem.html">Open&nbsp;Problems</a></div>
+<div class="menu-item"><a href="publications.html">Publications</a></div>
 <div class="menu-item"><a href="files/CV/CV.pdf">CV</a></div>
 <div class="menu-item"><a href="files/pdf/DPhil_thesis.pdf">DPhil&nbsp;Thesis</a></div>
 </td>
@@ -52,449 +50,97 @@
 <div id="toptitle">
 <h1>Hanlin Ren</h1>
 </div>
-<p><div style="float: right;"></p>
-<p><img src="files/photos/photo.jpg" alt="My photo" width="300"></p>
-<p>Photo taken by <a href="https://www.rahulilango.com/" target=&ldquo;blank&rdquo;>Rahul Ilango</a></p>
-<p></div></p>
-<p>I am a postdoctoral member at the <a href="https://www.ias.edu/math" target=&ldquo;blank&rdquo;>School of Mathematics, Institute for Advanced Study</a>. Previously, I was a DPhil student at the <a href="https://cs.ox.ac.uk" target=&ldquo;blank&rdquo;>University of Oxford</a>, very fortunately advised by <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;blank&rdquo;>Prof. Rahul Santhanam</a>. I was a member of <a href="https://www.chch.ox.ac.uk/" target=&ldquo;blank&rdquo;>Christ Church</a> and also a <a href="https://www.ox.ac.uk/clarendon" target=&ldquo;blank&rdquo;>Clarendon</a> scholar. Before that, I was an undergraduate student at <a href="http://iiis.tsinghua.edu.cn/en" target=&ldquo;blank&rdquo;>Institute for Interdisciplinary Information Sciences</a>, Tsinghua University.</p>
+
+<div style="float: right;">
+<img src="files/photos/photo.jpg" alt="My photo" width="300" />
+<p>Photo taken by <a href="https://www.rahulilango.com/">Rahul Ilango</a></p>
+</div>
+
+<p>I am a postdoctoral member at the <a href="https://www.ias.edu/math">School of Mathematics, Institute for Advanced Study</a>. Previously, I was a DPhil student at the <a href="https://cs.ox.ac.uk">University of Oxford</a>, very fortunately advised by <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/">Prof. Rahul Santhanam</a>. I was a member of <a href="https://www.chch.ox.ac.uk/">Christ Church</a> and also a <a href="https://www.ox.ac.uk/clarendon">Clarendon</a> scholar. Before that, I was an undergraduate student at <a href="http://iiis.tsinghua.edu.cn/en">Institute for Interdisciplinary Information Sciences</a>, Tsinghua University.</p>
+
 <p>I have a broad interest in theoretical computer science. Currently, I am interested in <b>computational complexity</b>, which studies the limitations of efficient computation. Some topics of complexity theory that I find fascinating are <b>circuit complexity</b>, <b>proof complexity</b>, <b>meta-complexity</b>, <b>explicit constructions</b>, and <b>average-case complexity</b>.</p>
-<p>At Tsinghua, I was advised by <a href="https://iiis.tsinghua.edu.cn/en/People/Faculty/DuanRan.htm" target=&ldquo;blank&rdquo;>Prof. Ran Duan</a> and worked on <b>graph algorithms</b>. One emphasis of my research was to design shortest-path data structures for graphs in the presence of failures.</p>
-<p>[<a href="https://scholar.google.com/citations?user=d7WVkWYAAAAJ" target=&ldquo;blank&rdquo;>Google Scholar</a>], [<a href="https://dblp.org/pers/r/Ren:Hanlin.html" target=&ldquo;blank&rdquo;>DBLP</a>], [<a href="https://twitter.com/dfc7027894e168c" target=&ldquo;blank&rdquo;>Twitter</a>], [<a href="https://orcid.org/0000-0002-7632-7574" target=&ldquo;blank&rdquo;>ORCID</a>]</p>
+
+<p>At Tsinghua, I was advised by <a href="https://iiis.tsinghua.edu.cn/en/People/Faculty/DuanRan.htm">Prof. Ran Duan</a> and worked on <b>graph algorithms</b>. One emphasis of my research was to design shortest-path data structures for graphs in the presence of failures.</p>
+
+<p>[<a href="https://scholar.google.com/citations?user=d7WVkWYAAAAJ">Google Scholar</a>], [<a href="https://dblp.org/pers/r/Ren:Hanlin.html">DBLP</a>], [<a href="https://twitter.com/dfc7027894e168c">Twitter</a>], [<a href="https://orcid.org/0000-0002-7632-7574">ORCID</a>]</p>
+
 <p>Contact:</p>
 <ul>
-<li><p><tt>h4n1in {DOT} r3n &lt;AT&gt; gmail {DOT} com</tt>. (recommended)</p>
-</li>
-<li><p><tt>h {DOT} ren &lt;AT&gt; ias {DOT} edu</tt>.</p>
-</li>
+<li><tt>h4n1in {DOT} r3n &lt;AT&gt; gmail {DOT} com</tt>. (recommended)</li>
+<li><tt>h {DOT} ren &lt;AT&gt; ias {DOT} edu</tt>.</li>
 </ul>
+
 <h2>News</h2>
-<p>Mar 2026: <a href="files/slides/slides_Mar_10_2026.pptx" target=&ldquo;blank&rdquo;>Slides</a>, <a href="https://youtu.be/rpGu4LDLOaM" target=&ldquo;blank&rdquo;>first part</a>, <a href="https://youtu.be/CQSbs1GJz60" target=&ldquo;blank&rdquo;>second part</a> of my talk on reverse mathematics of complexity lower bounds at IAS CSDM Seminar.</p>
+<p>Mar 2026: <a href="files/slides/slides_Mar_10_2026.pptx">Slides</a>, <a href="https://youtu.be/rpGu4LDLOaM">first part</a>, <a href="https://youtu.be/CQSbs1GJz60">second part</a> of my talk on reverse mathematics of complexity lower bounds at IAS CSDM Seminar.</p>
+
 <p>Sep 2025: Very excited to join the IAS!</p>
-<p>Feb 2024: I'm visiting <a href="https://researchmap.jp/shuichi.hirahara/?lang=english" target=&ldquo;blank&rdquo;>Shuichi Hirahara</a> in 2024 Spring!</p>
-<p>Jan 2023: I'm visiting <a href="https://chen-lijie.github.io/" target=&ldquo;blank&rdquo;>Lijie Chen</a> and the <a href="https://simons.berkeley.edu/programs/Meta-Complexity2023" target=&ldquo;blank&rdquo;>Meta-Complexity program at Simons Institute</a> in 2023 Spring.</p>
-<h2>Publications</h2>
+
+<p>Feb 2024: I'm visiting <a href="https://researchmap.jp/shuichi.hirahara/?lang=english">Shuichi Hirahara</a> in 2024 Spring!</p>
+
+<p>Jan 2023: I'm visiting <a href="https://chen-lijie.github.io/">Lijie Chen</a> and the <a href="https://simons.berkeley.edu/programs/Meta-Complexity2023">Meta-Complexity program at Simons Institute</a> in 2023 Spring.</p>
+
+
+<h2>Selected Papers</h2>
+
 <p><i>(In theoretical computer science, the list of authors are usually sorted in alphabetical order.)</i></p>
-<p><b>Finding Bugs in Short Proofs: The Metamathematics of Resolution Lower Bounds</b>, with <a href="https://www.cs.utexas.edu/~davidlee/" target=&ldquo;blank&rdquo;>Jiawei Li</a> and <a href="https://yuhao.li/" target=&ldquo;blank&rdquo;>Yuhao Li</a></p>
+<div class="paper-entry" data-tags="proof complexity,meta-complexity,TFNP">
+<p><b>Finding Bugs in Short Proofs: The Metamathematics of Resolution Lower Bounds</b>, with <a href="https://www.cs.utexas.edu/~davidlee/">Jiawei Li</a> and <a href="https://yuhao.li/">Yuhao Li</a></p>
 <ul>
-<li><p>[<a href="https://eccc.weizmann.ac.il/report/2024/190/" target=&ldquo;blank&rdquo;>ECCC</a>],
-[<a href="https://arxiv.org/abs/2411.15515" target=&ldquo;blank&rdquo;>arXiv</a>],
-[<a href="files/slides/slides_SJTU_rwPHP_PLS.pptx" target=&ldquo;blank&rdquo;>Slides</a> at SJTU (gentle intro)],
-[<a href="files/slides/slides_Oxford_rwPHP_PLS.pptx" target=&ldquo;blank&rdquo;>Slides</a> at Oxford proof complexity workshop (slightly more bounded arithmetic)],
-[<span class="title" onclick="toggle('summary-meta-complexity-of-Resolution')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
+<li><p>[<a href="https://eccc.weizmann.ac.il/report/2024/190/">ECCC</a>],
+[<a href="https://arxiv.org/abs/2411.15515">arXiv</a>],
+[<a href="files/slides/slides_SJTU_rwPHP_PLS.pptx">Slides</a> at SJTU (gentle intro)],
+[<a href="files/slides/slides_Oxford_rwPHP_PLS.pptx">Slides</a> at Oxford proof complexity workshop (slightly more bounded arithmetic)],
+[<span class="title" onclick="toggle('summary-meta-complexity-of-Resolution')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
 </ul>
-<p><span id="summary-meta-complexity-of-Resolution" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> A classic result of <a href=https://doi.org/10.1016/0304-3975(85)90144-6>Haken</a> shows that any Resolution proof of the pigeonhole principle requires size \(&gt; 1.01^n\). We study the "complexity" of proving this lower bound by considering its "refuter" problem: given oracle access to a purported size-\(1.01^n\) Resolution proof for the pigeonhole principle, find an illegal derivation in this Resolution proof. We show that this problem is complete for a \(\mathsf{TFNP}\) class called \(\mathrm{rwPHP}(\mathsf{PLS})\), which is the class corresponding to \(\mathsf{NP}\) search problems provably total in \(\mathsf{T}^1_2 + \mathrm{dwPHP}(\mathsf{PV})\). Indeed, the containment in \(\mathrm{rwPHP}(\mathsf{PLS})\) holds for many Resolution lower bounds proven in the literature and the \(\mathrm{rwPHP}(\mathsf{PLS})\)-hardness holds for <i>every</i> exponential-size Resolution lower bound that is <i>true</i>.</span></p>
-<ul>
-<li><p>To appear in ACM Symposium on Theory of Computing (STOC) 2026</p>
-<ul>
-<li><p><a href="https://doi.org/10.1145/3798129.3800793" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/stoc26_rwPHP_PLS.pdf" target=&ldquo;blank&rdquo;>local</a>).</p>
-</li>
-</ul>
-
-</li>
-</ul>
-<p><b>The Weak Rank Principle: Lower Bounds and Applications</b>, with <a href="https://dblp.org/pid/160/4469.html" target=&ldquo;blank&rdquo;>Michal Garlík</a>, <a href="https://dblp.org/pid/243/3837.html" target=&ldquo;blank&rdquo;>Svyatoslav Gryaznov</a> and <a href="https://www.doc.ic.ac.uk/~itzamere/" target=&ldquo;blank&rdquo;>Iddo Tzameret</a></p>
-<ul>
-<li><p>[<a href="files/slides/slides_Oxford_wRank.pptx" target=&ldquo;blank&rdquo;>Slides</a> at Oxford proof complexity workshop (focuses on applications)],
-[<span class="title" onclick="toggle('summary-weak-rank-principle')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-weak-rank-principle" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> We investigate the proof complexity of the <b>rank principle</b>, which states that for \(n &lt; m\), the product of an \(m\times n\) matrix \(X\) and an \(n\times m\) matrix \(Y\) cannot be equal to the \(m\times m\) identity matrix. The regime where \(n\) is <i>much</i> smaller than \(m\) is called the <b>weak</b> rank principle. We prove that the weak rank principle is hard for many proof systems such as Polynomial Calculus with Resolution (PCR) and Sherali-Adams (SA). In fact, we prove that these proof systems cannot prove the rank of <b>any</b> matrix to be small, hence establishing new proof complexity generators. We also explore the connection between weak rank principles and the (un)provability of circuit lower bounds.</span></p>
-<ul>
-<li><p>To appear in ACM Symposium on Theory of Computing (STOC) 2026</p>
-<ul>
-<li><p><a href="https://doi.org/10.1145/3798129.3800735" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/stoc26_wRank.pdf" target=&ldquo;blank&rdquo;>local</a>).</p>
-</li>
-</ul>
-
-</li>
-</ul>
-<p><b>Hardness of Range Avoidance and Proof Complexity Generators from Demi-Bits</b>, with <a href="https://wyc908.github.io/" target=&ldquo;blank&rdquo;>Yichuan Wang</a> and <a href="https://www.yan-zhong.com/" target=&ldquo;blank&rdquo;>Yan Zhong</a></p>
-<ul>
-<li><p>[<a href="https://eccc.weizmann.ac.il/report/2025/191/" target=&ldquo;blank&rdquo;>ECCC</a>],
-[<a href="https://arxiv.org/abs/2511.14061" target=&ldquo;blank&rdquo;>arXiv</a>],
-[<a href="https://eprint.iacr.org/2025/2114" target=&ldquo;blank&rdquo;>eprint</a>],
-[Independent and concurrent <a href="https://eccc.weizmann.ac.il/report/2025/190/" target=&ldquo;blank&rdquo;>work</a> by <a href="https://www.rahulilango.com/" target=&ldquo;blank&rdquo;>Rahul Ilango</a>],
-[<a href="files/slides/slides_demibits_Prague.pptx" target=&ldquo;blank&rdquo;>Slides</a> at Prague Logic Seminar (proof complexity oriented)],
-[<a href="files/slides/slides_demibits_Princeton.pptx" target=&ldquo;blank&rdquo;>Slides</a> and <a href="https://youtu.be/heBKvd52cV8" target=&ldquo;blank&rdquo;>video</a> at Princeton Theory Lunch (focused on &ldquo;cryptography against nondeterministic adversaries&rdquo;)],
-[<span class="title" onclick="toggle('summary-hardness-of-avoid')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-hardness-of-avoid" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> We show that the existence of demi-bits generators (in the sense of <a href="https://doi.org/10.1007/3-540-63248-4_8">Rudich</a>) with suitable stretch implies the range avoidance problem cannot be solved by a nondeterministic algorithm in polynomial time. We extend this result to show that similar assumptions imply proof complexity generators for every proof system, and that these proof complexity generators are <i>pseudo-surjective</i> (in the sense of <a href="https://www.karlin.mff.cuni.cz/~krajicek/dual.pdf">[Krajíček'04]</a>) in some parameter regimes.</span></p>
-<ul>
-<li><p>In Innovations in Theoretical Computer Science (ITCS) 2026, <u><b>Best Student Paper Award</b></u></p>
-<ul>
-<li><p><a href="https://doi.org/10.4230/LIPIcs.ITCS.2026.111" target=&ldquo;blank&rdquo;>Proceeding version</a>.</p>
-</li>
-</ul>
-
-</li>
-</ul>
-<p><b>Total Search Problems in \(\mathsf{ZPP}\)</b>, with <a href="https://noahrfleming.github.io/" target=&ldquo;blank&rdquo;>Noah Fleming</a>, <a href="https://blog.catalangrenade.com/p/about.html" target=&ldquo;blank&rdquo;>Stefan Grosser</a>, <a href="https://sidjain.me/" target=&ldquo;blank&rdquo;>Siddhartha Jain</a>, <a href="https://www.cs.utexas.edu/~davidlee/" target=&ldquo;blank&rdquo;>Jiawei Li</a>, <a href="https://morganfshirley.com/" target=&ldquo;blank&rdquo;>Morgan Shirley</a> and <a href="https://wwwaltzzz.github.io/" target=&ldquo;blank&rdquo;>Weiqiang Yuan</a></p>
-<ul>
-<li><p>[<a href="https://eccc.weizmann.ac.il/report/2025/204/" target=&ldquo;blank&rdquo;>ECCC</a>],
-[<a href="https://arxiv.org/abs/2512.01138" target=&ldquo;blank&rdquo;>arXiv</a>],
-[<a href="files/slides/slides_JHU_TFZPP.pptx" target=&ldquo;blank&rdquo;>Slides</a> at JHU],
-[<span class="title" onclick="toggle('summary-tfzpp')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-tfzpp" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> We explored the landscape of \(\mathsf{TFZPP}\) problems, i.e., total \(\mathsf{NP}\) search problems with efficient randomized algorithms. Interestingly, most natural problems in \(\mathsf{TFZPP}\) that we are aware of reduces to the \(\textrm{Lossy-Code}\) problem define in <a href="https://eccc.weizmann.ac.il/report/2022/025">[Korten'22]</a>. We also highlight a natural \(\mathsf{TFZPP}\) problem called \(\mathrm{Nephew}\), which does not seem to reduce to \(\textrm{Lossy-Code}\).</span></p>
-<ul>
-<li><p>In Innovations in Theoretical Computer Science (ITCS) 2026</p>
-<ul>
-<li><p><a href="https://doi.org/10.4230/LIPIcs.ITCS.2026.60" target=&ldquo;blank&rdquo;>Proceeding version</a> and <a href="https://youtu.be/C43UznCTWq0" target=&ldquo;blank&rdquo;>Morgan's talk</a>.</p>
-</li>
-</ul>
-
-</li>
-</ul>
-<p><b>New Algebrization Barriers to Circuit Lower Bounds via Communication Complexity of Missing-String</b>, with <a href="https://chen-lijie.github.io/" target=&ldquo;blank&rdquo;>Lijie Chen</a> and <a href="https://isonan-cn.github.io/" target=&ldquo;blank&rdquo;>Yang Hu</a></p>
-<ul>
-<li><p>[<a href="https://eccc.weizmann.ac.il/report/2025/184/" target=&ldquo;blank&rdquo;>ECCC</a>],
-[<a href="https://arxiv.org/abs/2511.14038" target=&ldquo;blank&rdquo;>arXiv</a>],
-[<span class="title" onclick="toggle('summary-xor-missing-string')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-xor-missing-string" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> We show new algebrization barriers (in the sense of <a href="https://www.scottaaronson.com/papers/alg.pdf">[AW'09]</a>) to proving circuit lower bounds, including an oracle \(O\) and its multilinear extension \(\widetilde{O}\) such that a natural subclass of \(\mathsf{MAEXP}^{\widetilde{O}}\) has half-exponential size \(O\)-oracle circuits. Our algebrization barriers are proved via communication lower bounds for a problem called \(\textrm{XOR-Missing-String}\): For \(m &lt; 2^{n/2}\), Alice has \(x_1, \dots, x_m \in \{0, 1\}^n\) as inputs, Bob has \(y_1, \dots, y_m \in \{0, 1\}^n\) as inputs, and their goal is to output any string that is different from \(x_i \oplus y_j\) for every \(i, j\in [m]\).</span></p>
-<ul>
-<li><p>In Innovations in Theoretical Computer Science (ITCS) 2026</p>
-<ul>
-<li><p><a href="https://doi.org/10.4230/LIPIcs.ITCS.2026.37" target=&ldquo;blank&rdquo;>Proceeding version</a>.</p>
-</li>
-</ul>
-
-</li>
-</ul>
-<p><b>On the Complexity of Avoiding Heavy Elements</b>, with <a href="https://luzhenjian.github.io/" target=&ldquo;blank&rdquo;>Zhenjian Lu</a>, <a href="https://www.dcs.warwick.ac.uk/~igorcarb/" target=&ldquo;blank&rdquo;>Igor C. Oliveira</a> and <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;blank&rdquo;>Rahul Santhanam</a></p>
-<ul>
-<li><p>[<a href="https://eccc.weizmann.ac.il/report/2024/115/" target=&ldquo;blank&rdquo;>ECCC</a>],
-[<span class="title" onclick="toggle('summary-heavy-Avoid')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-heavy-Avoid" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> We study the total search problem \(\mathtt{Heavy}\text{-}\mathtt{Avoid}\): Given \(\delta\approx 1/\mathrm{poly}(n)\) and a distribution \(\mathcal{D}\) over \(\{0, 1\}^n\) described by a circuit sampler, find a string that is sampled with probability \(&lt;\delta\) in \(\mathcal{D}\). We show that this problem characterizes the task of proving lower bounds against <i>uniform probabilistic circuits</i> (such as \(\mathsf{EXP}^{\mathsf{NP}}\) vs \(\mathsf{BP}\text{-}\mathsf{TC}^0\)). We also give unconditional pseudodeterministic algorithms for this problem. Finally, we present <i>non-black-box</i> reductions showing that this problem is hard for \(\mathrm{pr}\text{-}\mathsf{RP}\) in some weak sense, using connections to the <i>instance-wise</i> hardness-randomness tradeoffs of <a href=https://eccc.weizmann.ac.il/report/2021/080>[CT'21]</a> and <a href=https://eccc.weizmann.ac.il/report/2022/113/>[LP'23]</a>.</span></p>
-<ul>
-<li><p>In IEEE Symposium on Foundations of Computer Science (FOCS) 2024</p>
-<ul>
-<li><p><a href="https://doi.org/10.1109/FOCS61266.2024.00140" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/focs24_heavy_avoid.pdf" target=&ldquo;blank&rdquo;>local</a>) and <a href="https://youtu.be/o64YnUxYyhs" target=&ldquo;blank&rdquo;>Zhenjian's talk</a>.</p>
-</li>
-</ul>
-
-</li>
-</ul>
-<p><b>Symmetric Exponential Time Requires Near-Maximum Circuit Size</b>, with <a href="https://chen-lijie.github.io/" target=&ldquo;blank&rdquo;>Lijie Chen</a> and <a href="https://researchmap.jp/shuichi.hirahara/?lang=english" target=&ldquo;blank&rdquo;>Shuichi Hirahara</a></p>
-<ul>
-<li><p>[<a href="https://eccc.weizmann.ac.il/report/2023/144/" target=&ldquo;blank&rdquo;>ECCC</a>],
-[<a href="https://arxiv.org/abs/2309.12912" target=&ldquo;blank&rdquo;>arXiv</a>],
-[<a href="https://doi.org/10.1145/3778166" target=&ldquo;blank&rdquo;>JACM</a>],
-[<a href="https://twitter.com/dfc7027894e168c/status/1705271216548790675" target=&ldquo;blank&rdquo;>Twitter</a>],
-[<a href="https://eccc.weizmann.ac.il/report/2023/156" target=&ldquo;blank&rdquo;>Simplified and almost-everywhere version</a> by <a href="https://sites.google.com/view/zeyong" target=&ldquo;blank&rdquo;>Zeyong Li</a>],
-[Zeyong's <a href="https://youtu.be/axsPn1obRFg" target=&ldquo;blank&rdquo;>TCS+ talk</a>],
-[<a href="files/slides/slides_IAS_2.pptx" target=&ldquo;blank&rdquo;>Slides</a> (second half) and <a href="https://youtu.be/uxyN2eVYKic" target=&ldquo;blank&rdquo;>video</a> at IAS],
-[<a href="files/slides/slides_PKU_S2E_lb.pptx" target=&ldquo;blank&rdquo;>Slides</a> and <a href="https://b23.tv/BV1Cj411J7CB" target=&ldquo;blank&rdquo;>video</a> at PKU],
-[<a href="files/pdf/CHLR_S2E_journal.pdf" target=&ldquo;blank&rdquo;>draft</a> of journal submission],
-[<span class="title" onclick="toggle('summary-S2E')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-S2E" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> We prove near-maximum (\(2^n/n\)) circuit lower bounds for the complexity classes \(\Sigma_2\mathsf{E}\) and \(\mathsf{S}_2\mathsf{E}/_1\), improving the previous <a href="https://doi.org/10.1007/3-540-48686-0_21">half-exponential</a> lower bounds. In fact, we also obtain an infinitely-often single-valued \(\mathsf{FS}_2\mathsf{P}/_1\) algorithm for the range avoidance problem. Our results relativize.</span></p>
-<ul>
-<li><p>In Journal of the ACM; preliminary version in STOC 2024</p>
-<ul>
-<li><p><a href="https://doi.org/10.1145/3618260.3649624" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/stoc24_S2E_lb.pdf" target=&ldquo;blank&rdquo;>local</a>) and <a href="https://youtu.be/yVBSU1_0i2o" target=&ldquo;blank&rdquo;>video (with Zeyong Li)</a>.</p>
-</li>
-</ul>
-
-</li>
-</ul>
-<p><b>Polynomial-Time Pseudodeterministic Construction of Primes</b>, with <a href="https://chen-lijie.github.io/" target=&ldquo;blank&rdquo;>Lijie Chen</a>, <a href="https://luzhenjian.github.io/" target=&ldquo;blank&rdquo;>Zhenjian Lu</a>, <a href="https://www.dcs.warwick.ac.uk/~igorcarb/" target=&ldquo;blank&rdquo;>Igor C. Oliveira</a> and <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;blank&rdquo;>Rahul Santhanam</a></p>
-<ul>
-<li><p>[<a href="https://eccc.weizmann.ac.il/report/2023/076/" target=&ldquo;blank&rdquo;>ECCC</a>],
-[<a href="https://arxiv.org/abs/2305.15140" target=&ldquo;blank&rdquo;>arXiv</a>],
-[<a href="https://doi.org/10.1145/3803408" target=&ldquo;blank&rdquo;>JACM</a>],
-[<a href="https://twitter.com/dfc7027894e168c/status/1661505654299697160" target=&ldquo;blank&rdquo;>Twitter</a>],
-[<a href="files/slides/slides_UIUC_pseudodet.pptx" target=&ldquo;blank&rdquo;>Slides</a> at UIUC Theory Seminar],
-[<a href="files/slides/slides_TCSplus_pseudodet.pptx" target=&ldquo;blank&rdquo;>Slides</a> and <a href="https://youtu.be/yalaX02fVow" target=&ldquo;blank&rdquo;>video</a> at TCS+],
-[<a href="files/slides/slides_explicit_construction_workshop_pseudodet.pptx" target=&ldquo;blank&rdquo;>Slides</a> and <a href="https://www.dropbox.com/scl/fo/21z3i726j0j3o2wmuutp6/h?e=1&amp;preview=Workshop+4C.mov&amp;rlkey=kupk79p7h94tyxrcq9y370fg6&amp;dl=0" target=&ldquo;blank&rdquo;>video</a> at explicit construction workshop],
-[<a href="files/slides/slides_IAS_1.pptx" target=&ldquo;blank&rdquo;>Slides</a> (first half) and <a href="https://youtu.be/uxyN2eVYKic" target=&ldquo;blank&rdquo;>video</a> at IAS],
-[<span class="title" onclick="toggle('summary-pseudodet-poly')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-pseudodet-poly" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> We present a <b>pseudodeterministic</b> polynomial-time algorithm for constructing primes that works infinitely-often. (That is, although the algorithm is randomized, it outputs a <b>fixed</b> prime with high probability.) <a href=https://arxiv.org/abs/1612.01817>As usual(?)</a>, the only properties of primes we used are that (1) there are many primes and (2) <a href=https://doi.org/10.4007/annals.2004.160.781>PRIMES is in P</a>.</span></p>
-<ul>
-<li><p>In Journal of the ACM; preliminary version in FOCS 2023</p>
-<ul>
-<li><p><a href="https://doi.org/10.1109/FOCS57990.2023.00074" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/focs23_pseudodeterministic.pdf" target=&ldquo;blank&rdquo;>local</a>), <a href="files/slides/slides_FOCS23_pseudodet.pptx" target=&ldquo;blank&rdquo;>slides</a> and <a href="https://www.dropbox.com/scl/fo/21z3i726j0j3o2wmuutp6/h?e=1&amp;preview=Session+7A.mov&amp;rlkey=kupk79p7h94tyxrcq9y370fg6&amp;dl=0" target=&ldquo;blank&rdquo;>video</a>.</p>
-</li>
-</ul>
-
-</li>
-</ul>
-<p><b>Bounded Relativization</b>, with <a href="https://researchmap.jp/shuichi.hirahara/?lang=english" target=&ldquo;blank&rdquo;>Shuichi Hirahara</a> and <a href="https://luzhenjian.github.io/" target=&ldquo;blank&rdquo;>Zhenjian Lu</a></p>
-<ul>
-<li><p>[<a href="https://eccc.weizmann.ac.il/report/2023/070/" target=&ldquo;blank&rdquo;>ECCC</a>],
-[<a href="files/slides/slides_complexity_meeting_bounded_rel.pptx" target=&ldquo;blank&rdquo;>Slides</a> at Complexity Meetings],
-[<span class="title" onclick="toggle('summary-bounded-relativization')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-bounded-relativization" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> We propose a notion of <b>bounded</b> relativization: for a complexity class \(\mathfrak{C}\), a statement is \(\mathfrak{C}\)-relativizing if it holds relative to every oracle \(\mathcal{O} \in \mathfrak{C}\). We observe that the interactive proof results are usually \(\mathfrak{C}\)-relativizing for some large complexity class \(\mathfrak{C}\): for example, \({\sf IP} = {\sf PSPACE}\) is \({\sf PSPACE}\)-relativizing. Hence, \({\sf PSPACE}\)-relativization seems to capture a broad class of techniques including "relativizing techniques plus interactive proofs". We use this notion to give both positive results (by \({\sf PSPACE}\)-relativizing some known results) and negative results (by constructing oracles with bounded computational complexity).</span></p>
-<ul>
-<li><p>In Computational Complexity Conference (CCC) 2023</p>
-<ul>
-<li><p><a href="https://doi.org/10.4230/LIPIcs.CCC.2023.6" target=&ldquo;blank&rdquo;>Proceeding version</a>, <a href="files/slides/slides_CCC23_bounded_relativization.pptx" target=&ldquo;blank&rdquo;>slides</a> and <a href="https://youtu.be/gPqcSXNU0ms" target=&ldquo;blank&rdquo;>video</a>.</p>
-</li>
-</ul>
-
-</li>
-</ul>
-<p><b>Range Avoidance, Remote Point, and Hard Partial Truth Table via Satisfying-Pairs Algorithms</b>, with <a href="https://yeyuanch.github.io/" target=&ldquo;blank&rdquo;>Yeyuan Chen</a>, <a href="https://yizhihuang.org/" target=&ldquo;blank&rdquo;>Yizhi Huang</a> and <a href="https://ljt12138.github.io/" target=&ldquo;blank&rdquo;>Jiatu Li</a></p>
-<ul>
-<li><p>[<a href="https://eccc.weizmann.ac.il/report/2023/072/" target=&ldquo;blank&rdquo;>ECCC</a>],
-[<a href="https://twitter.com/dfc7027894e168c/status/1659207804895510531" target=&ldquo;blank&rdquo;>Twitter</a>],
-[<a href="files/slides/slides_derand_workshop_avoidance.pptx" target=&ldquo;blank&rdquo;>Slides</a> and <a href="https://vimeo.com/user39621409/review/772183410/1201f3a1d4" target=&ldquo;blank&rdquo;>video</a> at FOCS 2022 Workshop on New Directions in Derandomization],
-[<a href="files/slides/slides_yaoclass_avoidance.pptx" target=&ldquo;blank&rdquo;>Slides</a> at Yaoclass seminar],
-[<a href="files/slides/slides_meta-complexity_avoidance.pptx" target=&ldquo;blank&rdquo;>Slides</a> and <a href="https://youtu.be/pd45Av1iTlw" target=&ldquo;blank&rdquo;>video</a> at Simons Institute],
-[<span class="title" onclick="toggle('summary-avoid2')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-avoid2" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> We show that a non-trivial algorithm for <b>Satisfying-Pairs</b> implies an \(\mathsf{FP}^{\mathsf{NP}}\)-algorithm for the range avoidance problem. Actually, it implies an \(\mathsf{FP}^{\mathsf{NP}}\)-algorithm for the <b>Remote Point Problem</b>: Given a circuit \(C:\{0, 1\}^n \to \{0, 1\}^\ell\) where \(\ell \gg n\), find a string \(y\in\{0, 1\}^\ell\) such that for every \(x\in\{0, 1\}^n\), the Hamming distance between \(C(x)\) and \(y\) is large.<br>
-As a corollary, we present \(\mathsf{FP}^{\mathsf{NP}}\) algorithms for \(\mathsf{ACC}^0\)-\(\mathrm{RemotePoint}\), as well as the following problem called \(\mathsf{ACC}^0\)-\(\mathrm{PartialAvgHard}\): given strings \(x_1, x_2, \dots, x_L \in \{0, 1\}^n\), find bits \(y_1, y_2, \dots, y_L \in \{0, 1\}\) such that the partial function mapping \(x_i\) to \(y_i\) cannot be approximated by \(\mathrm{poly}(n)\)-size \(\mathsf{ACC}^0\) circuits. The parameters of our results match the best circuit lower bounds for \(\mathsf{ACC}^0\) <a href="https://eccc.weizmann.ac.il/report/2020/150">[CLW'20]</a>.
-</span></p>
-<ul>
-<li><p>In ACM Symposium on Theory of Computing (STOC) 2023</p>
-<ul>
-<li><p><a href="https://doi.org/10.1145/3564246.3585147" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/stoc23_avoidance.pdf" target=&ldquo;blank&rdquo;>local</a>), <a href="files/slides/slides_STOC22_avoidance.pptx" target=&ldquo;blank&rdquo;>slides (short)</a> and <a href="https://youtu.be/YqMPLX6wro4" target=&ldquo;blank&rdquo;>video</a>.</p>
-</li>
-</ul>
-
-</li>
-</ul>
-<p><b>\(\mathbf{NP}\)-Hardness of Approximating Meta-Complexity: A Cryptographic Approach</b>, with <a href="https://yizhihuang.org/" target=&ldquo;blank&rdquo;>Yizhi Huang</a> and <a href="https://www.rahulilango.com/" target=&ldquo;blank&rdquo;>Rahul Ilango</a></p>
-<ul>
-<li><p>[<a href="https://eccc.weizmann.ac.il/report/2023/046/" target=&ldquo;blank&rdquo;>ECCC</a>],
-[<a href="https://eprint.iacr.org/2023/528" target=&ldquo;blank&rdquo;>eprint</a>],
-[<a href="https://doi.org/10.1137/23M1608483" target=&ldquo;blank&rdquo;>SICOMP</a>],
-[<a href="https://twitter.com/dfc7027894e168c/status/1647677372622327809" target=&ldquo;blank&rdquo;>Twitter</a>],
-[Rahul's <a href="https://youtu.be/vG-VpTEdCBc" target=&ldquo;blank&rdquo;>talk</a> at Simons Institute (focused on big pictures and \(\mathrm{K}^t(x\mid y)\))],
-[<a href="files/slides/slides_meta-complexity_MOCSP.pptx" target=&ldquo;blank&rdquo;>Slides</a> and <a href="https://youtu.be/v9JiEf2WH58" target=&ldquo;blank&rdquo;>video</a> of my talk at Simon Institute (focused on \(\mathrm{GapMOCSP}\))],
-[<a href="files/slides/slides_ICT_CAS_MOCSP.pptx" target=&ldquo;blank&rdquo;>Slides</a> at ICT CAS],
-[<span class="title" onclick="toggle('summary-GapMOCSP')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-GapMOCSP" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> We propose a <b>cryptographic</b> approach for establishing \(\mathsf{NP}\)-hardness of <i>approximating</i> meta-complexity problems. Assuming subexponentially-secure indistinguishability obfuscation, we show nearly optimal \(\mathsf{NP}\)-hardness of approximating conditional time-bounded Kolmogorov complexity (\(\mathrm{K}^t(x\mid y)\)) via a <i>standard, randomised, black-box</i> reduction. Unconditionally, we show \(\mathsf{NP}\)-hardness of approximating <i>oracle circuit complexity</i> (\(\mathrm{GapMOCSP}\)) with <b>near-optimal approximation gap</b>, by constructing an oracle world with (unconditionally) secure witness encryption.</span></p>
-<ul>
-<li><p>In SIAM Journal on Computing; preliminary version in STOC 2023</p>
-<ul>
-<li><p><a href="https://doi.org/10.1145/3564246.3585154" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/stoc23_NP-hardness-of-meta-complexity.pdf" target=&ldquo;blank&rdquo;>local</a>), <a href="files/slides/slides_STOC23_MOCSP_long.pptx" target=&ldquo;blank&rdquo;>slides (long)</a> and <a href="https://youtu.be/DtJQ5-3zptE" target=&ldquo;blank&rdquo;>video</a>.</p>
-</li>
-</ul>
-
-</li>
-</ul>
-<p><b>On the Range Avoidance Problem for Circuits</b>, with <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;blank&rdquo;>Rahul Santhanam</a> and <a href="https://zhikunwang.com/" target=&ldquo;blank&rdquo;>Zhikun Wang</a></p>
-<ul>
-<li><p>[<a href="https://eccc.weizmann.ac.il/report/2022/048" target=&ldquo;blank&rdquo;>ECCC</a>],
-[<a href="https://twitter.com/dfc7027894e168c/status/1511089149398470666" target=&ldquo;blank&rdquo;>Twitter</a>],
-[<a href="files/slides/poster_avoidance.pdf" target=&ldquo;blank&rdquo;>Poster</a> at Oxford Computer Science Conference],
-[<a href="files/slides/slides_ICMS_avoidance.pptx" target=&ldquo;blank&rdquo;>Slides</a> and <a href="https://media.ed.ac.uk/playlist/dedicated/51612401/1_rl76d2rv/1_baw4y8ew" target=&ldquo;blank&rdquo;>video</a> at ICMS (focused on proof complexity)],
-[<a href="files/slides/slides_complexity_meetings_avoidance.pptx" target=&ldquo;blank&rdquo;>Slides</a> at Complexity Meetings],
-[<span class="title" onclick="toggle('summary-Avoidance')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-Avoidance" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> In the <b>range avoidance</b> problem, we are given a circuit \(C:\{0, 1\}^n\to \{0, 1\}^\ell\) where \(\ell &gt; n\), and we want to find a string \(y\in\{0, 1\}^\ell\) that is not in the range of \(C\). Using Ryan Williams's Algorithmic Method for proving circuit lower bounds, we show that derandomisation of certain data structures would imply an \({\sf FP}^{\sf NP}\) algorithm for solving this problem. As an application of this result, we characterise circuit lower bounds for \({\sf E}^{\sf NP}\) by non-trivial derandomisation algorithms <b>with \({\sf E}^{\sf NP}\) preprocessing</b>.</span></p>
-<ul>
-<li><p>In IEEE Symposium on Foundations of Computer Science (FOCS) 2022</p>
-<ul>
-<li><p><a href="https://doi.org/10.1109/FOCS54457.2022.00067" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/focs22_avoidance.pdf" target=&ldquo;blank&rdquo;>local</a>), <a href="files/slides/slides_FOCS22_avoidance.pptx" target=&ldquo;blank&rdquo;>slides</a> and <a href="https://vimeo.com/user39621409/review/771296149/46488425a3" target=&ldquo;blank&rdquo;>video</a>.</p>
-</li>
-</ul>
-
-</li>
-</ul>
-<p><b>Maintaining Exact Distances under Multiple Edge Failures</b>, with <a href="https://iiis.tsinghua.edu.cn/en/People/Faculty/DuanRan.htm" target=&ldquo;blank&rdquo;>Ran Duan</a></p>
-<ul>
-<li><p>[<a href="https://arxiv.org/abs/2111.03360" target=&ldquo;blank&rdquo;>arXiv</a>],
-[<a href="https://twitter.com/dfc7027894e168c/status/1457648288585424896" target=&ldquo;blank&rdquo;>Twitter</a>],
-[<span class="title" onclick="toggle('summary-exact-distance')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-exact-distance" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> For every constant \(d\ge 1\) and undirected weighted graph \(G\), we present a data structure of size \(O(n^4)\) that supports the following query in constant time: Given a set of \(d\) edge failures and two vertices \(u, v\), what is the <b>exact</b> distance between \(u\) and \(v\) with the failed edges removed? This is the first non-trivial data structure for handling exact distances under multiple failures. For non-constant \(d\), our query time is \(d^{O(d)}\) and space complexity is \(O(dn^4)\).</span></p>
-<ul>
-<li><p>In ACM Symposium on Theory of Computing (STOC) 2022</p>
-<ul>
-<li><p><a href="https://doi.org/10.1145/3519935.3520002" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/stoc22_exact_distance_oracle.pdf" target=&ldquo;blank&rdquo;>local</a>), <a href="files/slides/slides_STOC22_exact_distance_oracle_long.pptx" target=&ldquo;blank&rdquo;>slides (long)</a>, <a href="files/slides/slides_STOC22_exact_distance_oracle_short.pptx" target=&ldquo;blank&rdquo;>slides (short)</a> and <a href="http://youtu.be/B1wMXgTCy8o" target=&ldquo;blank&rdquo;>video</a>.</p>
-</li>
-</ul>
-
-</li>
-</ul>
-<p><b>Robustness of Average-Case Meta-Complexity via Pseudorandomness</b>, with <a href="https://www.rahulilango.com/" target=&ldquo;blank&rdquo;>Rahul Ilango</a> and <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;blank&rdquo;>Rahul Santhanam</a></p>
-<ul>
-<li><p>[<a href="https://eccc.weizmann.ac.il/report/2021/082/" target=&ldquo;blank&rdquo;>Previous ECCC version</a>],
-[<a href="files/slides/slides_meta-complexity_robustness.pptx" target=&ldquo;blank&rdquo;>Slides</a> at meta-complexity seminar],
-[<span class="title" onclick="toggle('summary-samplable-Kolmogorov')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-samplable-Kolmogorov" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> We give reductions to show that the error-prone average-case complexity of many meta-complexity problems are very robust w.r.t. samplable distributions. For example, it is strongly (\(1/2+{\rm negl}(n)\)) average-case hard to approximate the (worst-case uncomputable) Kolmogorov complexity within a multiplicative factor of \(n^{0.9}\) if and only if it is weakly (\(1-1/{\rm poly}(n)\)) average-case hard to approximate the Kolmogorov complexity within an additive factor of \(\omega(\log n)\), both under some samplable distribution. Moreover, they are equivalent to the existence of one-way functions.</span></p>
-<ul>
-<li><p>In ACM Symposium on Theory of Computing (STOC) 2022</p>
-<ul>
-<li><p><a href="https://doi.org/10.1145/3519935.3520051" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/stoc22_robustness.pdf" target=&ldquo;blank&rdquo;>local</a>).</p>
-</li>
-</ul>
-
-</li>
-</ul>
-<p><b>A Relativization Perspective on Meta-Complexity</b>, with <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;blank&rdquo;>Rahul Santhanam</a></p>
-<ul>
-<li><p>[<a href="https://eccc.weizmann.ac.il/report/2021/089" target=&ldquo;blank&rdquo;>ECCC</a>],
-[<span class="title" onclick="toggle('summary-relativization-MCSP')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-relativization-MCSP" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> We investigate the role of relativization in the study of <i>meta-complexity</i> (e.g. minimum circuit size problem). Among other results, we find a relativized world where \({\rm search}\text{-}{\rm MCSP}\) is "much harder" than \({\rm MCSP}\), and another world where Levin's \({\rm Kt}\) complexity can be approximated in (deterministic) polynomial time.</span></p>
-<ul>
-<li><p>In International Symposium on Theoretical Aspects of Computer Science (STACS) 2022</p>
-<ul>
-<li><p><a href="https://doi.org/10.4230/LIPIcs.STACS.2022.54" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/stacs22_relativized_MCSP.pdf" target=&ldquo;blank&rdquo;>local</a>), <a href="files/slides/slides_STACS22_relativized_MCSP_full.pdf" target=&ldquo;blank&rdquo;>slides</a>, <a href="http://youtu.be/YJy2si_9TP8" target=&ldquo;blank&rdquo;>teaser video</a> and <a href="files/slides/slides_STACS22_relativized_MCSP_teaser.pdf" target=&ldquo;blank&rdquo;>teaser slide</a>.</p>
-</li>
-</ul>
-
-</li>
-</ul>
-<p><b>Hardness of \({\rm KT}\) Characterizes Parallel Cryptography</b>, with <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;blank&rdquo;>Rahul Santhanam</a></p>
-<ul>
-<li><p>[<a href="https://eccc.weizmann.ac.il/report/2021/057" target=&ldquo;blank&rdquo;>ECCC</a>],
-[<a href="https://eprint.iacr.org/2021/1076" target=&ldquo;blank&rdquo;>eprint</a>],
-[<a href="files/slides/slides_yaoclass_KT_OWF.pptx" target=&ldquo;blank&rdquo;>Slides</a> at Yaoclass seminar],
-[<a href="files/slides/slides_oxford_warwick_KT_OWF.pptx" target=&ldquo;blank&rdquo;>Slides</a> at Oxford-Warwick],
-[<a href="files/slides/slides_DIMACS_KT_OWF.pptx" target=&ldquo;blank&rdquo;>Slides</a> and <a href="http://youtu.be/hZZaEuumtTY" target=&ldquo;blank&rdquo;>video</a> at DIMACS meta-complexity workshop],
-[<span class="title" onclick="toggle('summary-MKTP-OWF')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-MKTP-OWF" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> A recent breakthrough <a href='http://ia.cr/2020/423'>[LP'20]</a> showed that one-way functions exist if and only if \({\rm K}^t\) is bounded-error hard on average, where \(t(n) &gt; 2n\) is any polynomial. Building on this result, we show that one-way functions can be computed in (uniform-)\({\sf NC}^0\) if and only if the \({\rm KT}\) complexity is hard on average. Our techniques also imply average-case reductions between the \({\rm KT}\) complexity and an \({\sf NC}^1\)-variant of the \({\rm K}^t\) complexity.</span></p>
-<ul>
-<li><p>In Computational Complexity Conference (CCC) 2021, <u>invited to the ToC special issue</u></p>
-<ul>
-<li><p><a href="https://doi.org/10.4230/LIPIcs.CCC.2021.35" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/ccc21_KT_OWF.pdf" target=&ldquo;blank&rdquo;>local</a>), <a href="files/slides/slides_CCC21_KT_OWF_long.pptx" target=&ldquo;blank&rdquo;>slides (long)</a>, <a href="files/slides/slides_CCC21_KT_OWF_short.pptx" target=&ldquo;blank&rdquo;>slides (short)</a> and <a href="http://youtu.be/esFxj1cNLCE" target=&ldquo;blank&rdquo;>video</a>.</p>
-</li>
-</ul>
-
-</li>
-</ul>
-<p><b>Constructing a Distance Sensitivity Oracle in \(O(n^{2.5794}M)\) Time</b>, with <a href="https://scholar.google.com/citations?user=MpUWcEAAAAAJ" target=&ldquo;blank&rdquo;>Yong Gu</a></p>
-<ul>
-<li><p>[<a href="https://arxiv.org/abs/2102.08569" target=&ldquo;blank&rdquo;>arXiv</a>],
-[<a href="https://twitter.com/dfc7027894e168c/status/1362251312285372471" target=&ldquo;blank&rdquo;>Twitter</a>],
-[<a href="files/slides/poster_faster_DSO.pdf" target=&ldquo;blank&rdquo;>Poster</a> at the 10-th year anniversary of IIIS],
-[<a href="files/slides/slides_IJTCS21_faster_DSO.pptx" target=&ldquo;blank&rdquo;>Slides</a> at IJTCS 2021],
-[<a href="files/slides/slides_yaoclass_faster_DSO.pptx" target=&ldquo;blank&rdquo;>Slides</a> at Yaoclass seminar],
-[<a href="https://arxiv.org/abs/2308.08870" target=&ldquo;blank&rdquo;>Karczmarz and Sankowski's improvement</a>],
-[<span class="title" onclick="toggle('summary-Faster-DSO')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-Faster-DSO" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> We improve the construction time of distance sensitivity oracles for direct graphs to \(O(n^{2.5794}M)\), where \(n\) is the number of vertices, and the edge weights are integers in \([1, M]\). The new ingredients are a faster algorithm for inverting a polynomial matrix modulo \(x^r\), adapted from <a href='https://doi.org/10.1016/j.jco.2014.09.004'>[ZLS'15]</a>, and an algorithm that computes <b>consistent</b> shortest path trees in current APSP time.</span></p>
-<ul>
-<li><p>In International Colloquium on Automata, Languages and Programming (ICALP) 2021</p>
-<ul>
-<li><p><a href="https://doi.org/10.4230/LIPIcs.ICALP.2021.76" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/icalp21_faster_DSO.pdf" target=&ldquo;blank&rdquo;>local</a>), <a href="files/slides/slides_ICALP21_faster_DSO.pptx" target=&ldquo;blank&rdquo;>slides</a> and <a href="http://youtu.be/uIFoucab6d4" target=&ldquo;blank&rdquo;>video</a>.</p>
-</li>
-</ul>
-
-</li>
-</ul>
-<p><b>Approximate Distance Oracles Subject to Multiple Vertex Failures</b>, with <a href="https://iiis.tsinghua.edu.cn/en/People/Faculty/DuanRan.htm" target=&ldquo;blank&rdquo;>Ran Duan</a> and <a href="https://scholar.google.com/citations?user=MpUWcEAAAAAJ" target=&ldquo;blank&rdquo;>Yong Gu</a></p>
-<ul>
-<li><p>[<a href="https://arxiv.org/abs/2002.06812" target=&ldquo;blank&rdquo;>arXiv</a>],
-[<a href="https://twitter.com/dfc7027894e168c/status/1229759316476907520" target=&ldquo;blank&rdquo;>Twitter</a>],
-[<a href="files/slides/slides_yaoclass_VSDO.pptx" target=&ldquo;blank&rdquo;>Slides</a> at Yaoclass seminar],
-[<span class="title" onclick="toggle('summary-VSDO')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-VSDO" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> We design data structures that maintain approximate distances for weighted undirected graphs and tolerate multiple vertex failures. In particular, given any two vertices \(u,v\) and any set of \(d\) failed vertices \(D\), we can output an \((1+\epsilon)\)-approximation of the length of shortest path from \(u\) to \(v\) that avoids \(D\). Roughly speaking, for any constant number of failures, our structure uses \(O(n^{2.01})\) space and \(\operatorname{poly}(\log n,\epsilon^{-1})\) query time.</span></p>
-<ul>
-<li><p>In ACM-SIAM Symposium on Discrete Algorithms (SODA) 2021</p>
-<ul>
-<li><p><a href="https://doi.org/10.1137/1.9781611976465.148" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/soda21_VSDO.pdf" target=&ldquo;blank&rdquo;>local</a>), <a href="files/slides/slides_SODA21_VSDO_long.pptx" target=&ldquo;blank&rdquo;>slides (long)</a>, <a href="files/slides/slides_SODA21_VSDO_short.pptx" target=&ldquo;blank&rdquo;>slides (short)</a> and <a href="https://player.vimeo.com/video/496602190" target=&ldquo;blank&rdquo;>video</a>.</p>
-</li>
-</ul>
-
-</li>
-</ul>
-<p><b>Improved Distance Sensitivity Oracles with Subcubic Preprocessing Time</b></p>
-<ul>
-<li><p>[<a href="https://arxiv.org/abs/2007.11495" target=&ldquo;blank&rdquo;>arXiv</a>],
-[<a href="https://twitter.com/dfc7027894e168c/status/1286173398238785539" target=&ldquo;blank&rdquo;>Twitter</a>],
-[<a href="https://doi.org/10.1016/j.jcss.2021.08.005" target=&ldquo;blank&rdquo;>JCSS</a>],
-[<span class="title" onclick="toggle('summary-subcubic-DSO')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-subcubic-DSO" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> We show that on a directed graph with integer edge weights in \([1,W]\), we can construct a distance sensitivity oracle with \(\tilde{O}(n^{2.7233}M)\) preprocessing time and constant query time. For undirected graphs, the preprocessing time can be improved to \(\tilde{O}(n^{(3+\omega)/2}M)\). We think the main advantage of our oracle is its <b>simplicity</b>.</span></p>
-<ul>
-<li><p>In European Symposium on Algorithms (ESA) 2020, <u>invited to the JCSS special issue</u></p>
-<ul>
-<li><p><a href="https://doi.org/10.4230/LIPIcs.ESA.2020.79" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/esa20_subcubic_DSO.pdf" target=&ldquo;blank&rdquo;>local</a>), <a href="files/slides/slides_ESA20_subcubic_DSO.pptx" target=&ldquo;blank&rdquo;>slides</a> and <a href="https://youtu.be/2Z46AybFkJ8" target=&ldquo;blank&rdquo;>video</a>.</p>
-</li>
-</ul>
-
-</li>
-</ul>
-<p><b>Strong Average-Case Circuit Lower Bounds from Non-trivial Derandomization</b>, with <a href="https://chen-lijie.github.io/" target=&ldquo;blank&rdquo;>Lijie Chen</a></p>
-<ul>
-<li><p>[<a href="https://eccc.weizmann.ac.il/report/2020/010" target=&ldquo;blank&rdquo;>ECCC</a>],
-[<a href="https://doi.org/10.1137/20M1364886" target=&ldquo;blank&rdquo;>SICOMP</a>],
-[<a href="files/slides/slides_SIGMA_strong_avg_LB.pptx" target=&ldquo;blank&rdquo;>Slides</a> at SIGMA ICT CAS],
-[<span class="title" onclick="toggle('summary-strong-avg-lb')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-strong-avg-lb" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> We show that for any integer \(k\), \(\mathsf{NQP} = \mathsf{NTIME}[2^{\mathrm{polylog}(n)}]\) cannot be \((1/2+1/2^{-\log^k n})\)-approximated by \(\mathsf{ACC}^0\circ\mathsf{THR}\) circuits of \(2^{\log^k n}\) size. Previously, it was unknown whether \(\mathsf{E}^{\mathsf{NP}}\) contains a function that is not \((1/2+1/\sqrt{n})\)-approximated by polynomial-size \(\mathsf{AC}^0[2]\) circuits. An interesting technical ingredient in this paper is a <b>hardness amplification</b> theorem with an <b>Approximate Sum</b> error corrector, borrowed from <a href='https://doi.org/10.1137/S0097539705446950'>[AIK'06]</a>.</span></p>
-<ul>
-<li><p>In ACM Symposium on Theory of Computing (STOC) 2020, <u>invited to the SICOMP special issue</u></p>
-<ul>
-<li><p><a href="https://doi.org/10.1145/3357713.3384279" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/stoc20_strong_avg_lb.pdf" target=&ldquo;blank&rdquo;>local</a>), <a href="files/slides/slides_STOC20_strong_avg_lb.pptx" target=&ldquo;blank&rdquo;>slides</a> and <a href="https://youtu.be/xWDQ4LefOVs" target=&ldquo;blank&rdquo;>video</a>.</p>
-</li>
-</ul>
-
-</li>
-</ul>
-<p><b>Approximating All-Pair Bounded-Leg Shortest Path and APSP-AF in Truly-Subcubic Time</b>, with <a href="https://iiis.tsinghua.edu.cn/en/People/Faculty/DuanRan.htm" target=&ldquo;blank&rdquo;>Ran Duan</a></p>
-<ul>
-<li><p>[<span class="title" onclick="toggle('summary-APSP-AF')" style="cursor:pointer; u:hover"><font color="red">Summary</font></span>]</p>
-</li>
-</ul>
-<p><span id="summary-APSP-AF" style="display:none; border:1pt solid; padding: 5px; background-color:lavender">
-<b> Summary: </b> Given a directed graph \(G\) in which each edge \(e\) has length \(d_e\) and capacity \(f_e\), we want to answer the following kind of queries: Given \((u,v,f)\), what is the length of the shortest path from \(u\) to \(v\) that only uses edges with capacity at least \(f\)? For \((1+\epsilon)\)-approximating the answers, we design a data structure with \(\tilde{O}(n^{(\omega+3)/2}\epsilon^{-1.5}\log W)\) preprocessing time and \(O(\log\log_{\epsilon^{-1}}(nW))\) query time, where \(W\) is the maximum edge weight.</span></p>
-<ul>
-<li><p>In International Colloquium on Automata, Languages and Programming (ICALP) 2018</p>
-<ul>
-<li><p><a href="https://doi.org/10.4230/LIPIcs.ICALP.2018.42" target=&ldquo;blank&rdquo;>Proceeding version</a> (<a href="files/pdf/icalp18_APSP_AF.pdf" target=&ldquo;blank&rdquo;>local</a>) and <a href="files/slides/slides_icalp18.pdf" target=&ldquo;blank&rdquo;>slides</a>.</p>
-</li>
-</ul>
-
-</li>
-</ul>
-<div id="footer">
-<div id="footer-text">
-        Page generated 2026-04-02 13:59:26 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>. Uses <a href="https://checkmyworking.com/cm-web-fonts/">Computer Modern Fonts</a>.
+<div id="summary-meta-complexity-of-Resolution" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> A classic result of <a href=https://doi.org/10.1016/0304-3975(85)90144-6>Haken</a> shows that any Resolution proof of the pigeonhole principle requires size $> 1.01^n$. We study the "complexity" of proving this lower bound by considering its "refuter" problem: given oracle access to a purported size-$1.01^n$ Resolution proof for the pigeonhole principle, find an illegal derivation in this Resolution proof. We show that this problem is complete for a $\mathsf{TFNP}$ class called $\mathrm{rwPHP}(\mathsf{PLS})$, which is the class corresponding to $\mathsf{NP}$ search problems provably total in $\mathsf{T}^1_2 + \mathrm{dwPHP}(\mathsf{PV})$. Indeed, the containment in $\mathrm{rwPHP}(\mathsf{PLS})$ holds for many Resolution lower bounds proven in the literature and the $\mathrm{rwPHP}(\mathsf{PLS})$-hardness holds for <i>every</i> exponential-size Resolution lower bound that is <i>true</i>.</div>
+<ul><li><p>In ACM Symposium on Theory of Computing (STOC) 2026</p><ul><li><a href="https://doi.org/10.1145/3798129.3800793">Proceeding version</a> (<a href="files/pdf/stoc26_rwPHP_PLS.pdf">local</a>), <a href="files/slides/slides_STOC26_rwPHP_PLS.pptx">slides</a>, <a href="files/slides/poster_rwPHP_PLS.pdf">poster</a>.</li></ul></li></ul>
 </div>
+<div class="paper-entry" data-tags="range avoidance,proof complexity,cryptography">
+<p><b>Hardness of Range Avoidance and Proof Complexity Generators from Demi-Bits</b>, with <a href="https://wyc908.github.io/">Yichuan Wang</a> and <a href="https://www.yan-zhong.com/">Yan Zhong</a></p>
+<ul>
+<li><p>[<a href="https://eccc.weizmann.ac.il/report/2025/191/">ECCC</a>],
+[<a href="https://arxiv.org/abs/2511.14061">arXiv</a>],
+[<a href="https://eprint.iacr.org/2025/2114">eprint</a>],
+[Independent and concurrent <a href="https://eccc.weizmann.ac.il/report/2025/190/">work</a> by <a href="https://www.rahulilango.com/">Rahul Ilango</a>],
+[<a href="files/slides/slides_demibits_Prague.pptx">Slides</a> at Prague Logic Seminar (proof complexity oriented)],
+[<a href="files/slides/slides_demibits_Princeton.pptx">Slides</a> and <a href="https://youtu.be/heBKvd52cV8">video</a> at Princeton Theory Lunch (focused on "cryptography against nondeterministic adversaries")],
+[<span class="title" onclick="toggle('summary-hardness-of-avoid')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
+</ul>
+<div id="summary-hardness-of-avoid" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> We show that the existence of demi-bits generators (in the sense of <a href="https://doi.org/10.1007/3-540-63248-4_8">Rudich</a>) with suitable stretch implies the range avoidance problem cannot be solved by a nondeterministic algorithm in polynomial time. We extend this result to show that similar assumptions imply proof complexity generators for every proof system, and that these proof complexity generators are <i>pseudo-surjective</i> (in the sense of <a href="https://www.karlin.mff.cuni.cz/~krajicek/dual.pdf">[Krajíček'04]</a>) in some parameter regimes.</div>
+<ul><li><p>In Innovations in Theoretical Computer Science (ITCS) 2026, <i><b>Best Student Paper Award</b></i></p><ul><li><a href="https://doi.org/10.4230/LIPIcs.ITCS.2026.111">Proceeding version</a>.</li></ul></li></ul>
 </div>
+<div class="paper-entry" data-tags="pseudodeterministic algorithms,iterative win-win">
+<p><b>Polynomial-Time Pseudodeterministic Construction of Primes</b>, with <a href="https://chen-lijie.github.io/">Lijie Chen</a>, <a href="https://luzhenjian.github.io/">Zhenjian Lu</a>, <a href="https://www.dcs.warwick.ac.uk/~igorcarb/">Igor C. Oliveira</a>, and <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/">Rahul Santhanam</a></p>
+<ul>
+<li><p>[<a href="https://eccc.weizmann.ac.il/report/2023/076/">ECCC</a>],
+[<a href="https://arxiv.org/abs/2305.15140">arXiv</a>],
+[<a href="https://doi.org/10.1145/3803408">JACM</a>],
+[<a href="https://twitter.com/dfc7027894e168c/status/1661505654299697160">Twitter</a>],
+[<a href="files/slides/slides_UIUC_pseudodet.pptx">Slides</a> at UIUC Theory Seminar],
+[<a href="files/slides/slides_TCSplus_pseudodet.pptx">Slides</a> and <a href="https://youtu.be/yalaX02fVow">video</a> at TCS+],
+[<a href="files/slides/slides_explicit_construction_workshop_pseudodet.pptx">Slides</a> and <a href="https://www.dropbox.com/scl/fo/21z3i726j0j3o2wmuutp6/h?e=1&preview=Workshop+4C.mov&rlkey=kupk79p7h94tyxrcq9y370fg6&dl=0">video</a> at explicit construction workshop],
+[<a href="files/slides/slides_IAS_1.pptx">Slides</a> (first half) and <a href="https://youtu.be/uxyN2eVYKic">video</a> at IAS],
+[<span class="title" onclick="toggle('summary-pseudodet-poly')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
+</ul>
+<div id="summary-pseudodet-poly" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> We present a <b>pseudodeterministic</b> polynomial-time algorithm for constructing primes that works infinitely-often. (That is, although the algorithm is randomized, it outputs a <b>fixed</b> prime with high probability.) <a href=https://arxiv.org/abs/1612.01817>As usual(?)</a>, the only properties of primes we used are that (1) there are many primes and (2) <a href=https://doi.org/10.4007/annals.2004.160.781>PRIMES is in P</a>.</div>
+<ul><li><p>In Journal of the ACM; preliminary version in FOCS 2023</p><ul><li><a href="https://doi.org/10.1109/FOCS57990.2023.00074">Proceeding version</a> (<a href="files/pdf/focs23_pseudodeterministic.pdf">local</a>), <a href="files/slides/slides_FOCS23_pseudodet.pptx">slides</a>, <a href="https://www.dropbox.com/scl/fo/21z3i726j0j3o2wmuutp6/h?e=1&preview=Session+7A.mov&rlkey=kupk79p7h94tyxrcq9y370fg6&dl=0">video</a>.</li></ul></li></ul>
+</div>
+<div class="paper-entry" data-tags="range avoidance,circuit complexity,algorithmic method">
+<p><b>On the Range Avoidance Problem for Circuits</b>, with <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/">Rahul Santhanam</a> and <a href="https://zhikunwang.com/">Zhikun Wang</a></p>
+<ul>
+<li><p>[<a href="https://eccc.weizmann.ac.il/report/2022/048">ECCC</a>],
+[<a href="https://twitter.com/dfc7027894e168c/status/1511089149398470666">Twitter</a>],
+[<a href="files/slides/poster_avoidance.pdf">Poster</a> at Oxford Computer Science Conference],
+[<a href="files/slides/slides_ICMS_avoidance.pptx">Slides</a> and <a href="https://media.ed.ac.uk/playlist/dedicated/51612401/1_rl76d2rv/1_baw4y8ew">video</a> at ICMS (focused on proof complexity)],
+[<a href="files/slides/slides_complexity_meetings_avoidance.pptx">Slides</a> at Complexity Meetings],
+[<span class="title" onclick="toggle('summary-Avoidance')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
+</ul>
+<div id="summary-Avoidance" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> In the <b>range avoidance</b> problem, we are given a circuit $C:\{0, 1\}^n\to \{0, 1\}^\ell$ where $\ell > n$, and we want to find a string $y\in\{0, 1\}^\ell$ that is not in the range of $C$. Using Ryan Williams's Algorithmic Method for proving circuit lower bounds, we show that derandomisation of certain data structures would imply an ${\sf FP}^{\sf NP}$ algorithm for solving this problem. As an application of this result, we characterise circuit lower bounds for ${\sf E}^{\sf NP}$ by non-trivial derandomisation algorithms <b>with ${\sf E}^{\sf NP}$ preprocessing</b>.</div>
+<ul><li><p>In IEEE Symposium on Foundations of Computer Science (FOCS) 2022</p><ul><li><a href="https://doi.org/10.1109/FOCS54457.2022.00067">Proceeding version</a> (<a href="files/pdf/focs22_avoidance.pdf">local</a>), <a href="files/slides/slides_FOCS22_avoidance.pptx">slides</a>, <a href="https://vimeo.com/user39621409/review/771296149/46488425a3">video</a>.</li></ul></li></ul>
+</div>
+
+<p><a href="publications.html">Full publication list.</a></p>
+
 </td>
 </tr>
 </table>

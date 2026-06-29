@@ -1,0 +1,69 @@
+.paper-entry {
+    margin-bottom: 0.3em;
+}
+
+.paper-entry > *:last-child {
+    margin-bottom: 0;
+}
+
+.paper-entry > ul:last-child li:last-child > ul {
+    margin-bottom: 0;
+}
+
+.bibtex-panel {
+    border: 1pt solid #ccc;
+    padding: 8px;
+    background-color: #f8f8f8;
+    margin-top: 4px;
+}
+
+.bibtex-panel pre {
+    font-family: monospace;
+    white-space: pre-wrap;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.abstract-panel {
+    border: 1pt solid;
+    padding: 5px;
+    background-color: #e8f4e8;
+    margin-top: 4px;
+}
+
+.ext-link {
+    font-size: 0.85em;
+    padding: 1px 4px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #333;
+    white-space: nowrap;
+}
+
+.ext-link:hover {
+    background-color: #eee;
+}
+
+.tag-badge {
+    display: inline-block;
+    font-size: 0.78em;
+    padding: 2px 8px;
+    border-radius: 10px;
+    background-color: #dde;
+    color: #446;
+    margin-right: 3px;
+    margin-top: 2px;
+    border: 1px solid transparent;
+    transition: background-color 0.15s, border-color 0.15s;
+}
+
+.tag-badge.active {
+    background-color: #446;
+    color: #fff;
+    border-color: #224;
+}
+
+#tag-filter .tag-badge:hover {
+    border-color: #668;
+}
