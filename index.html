@@ -80,9 +80,41 @@ function toggle(id) {
 <p>Jan 2023: I'm visiting <a href="https://chen-lijie.github.io/">Lijie Chen</a> and the <a href="https://simons.berkeley.edu/programs/Meta-Complexity2023">Meta-Complexity program at Simons Institute</a> in 2023 Spring.</p>
 
 
-<h2>Selected Papers</h2>
+<h2>Recent Papers</h2>
 
 <p><i>(In theoretical computer science, the list of authors are usually sorted in alphabetical order.)</i></p>
+<div class="paper-entry" data-tags="proof complexity,range avoidance,cryptography">
+<p><b>Many Proof Complexity Generators Inside One Demi-Bits Generator</b>, with <a href="https://www.cs.jhu.edu/~lixints/">Xin Li</a> and <a href="https://www.yan-zhong.com/">Yan Zhong</a></p>
+<ul>
+<li><p>[<span class="title" onclick="toggle('summary-many-PCGs')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
+</ul>
+<div id="summary-many-PCGs" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> For every demi-bits generator $G: \{0, 1\}^n \to \{0, 1\}^m$ ($m \ge 10n$) and every proof system $\mathcal{P}$, we show that a random subset of its outputs ($G|_I$, $I\gets 2^{[m]}$) forms a proof complexity generator for $\mathcal{P}$ with constant probability. This result is an <b>extremely simple</b> corollary of the <a href="https://en.wikipedia.org/wiki/Sauer%E2%80%93Shelah_lemma">Sauer–Shelah lemma</a>. Based on this result, we prove hardness of $\mathsf{NC}^0$-$\mathrm{Avoid}$ and $\mathsf{XOR}$-$\mathrm{RemotePoint}$ based on various hardness assumptions against nondeterministic algorithms.</div>
+<ul><li><p>To appear in IEEE Symposium on Foundations of Computer Science (FOCS) 2026</p></li></ul>
+</div>
+<div class="paper-entry" data-tags="circuit complexity,iterative win-win,range avoidance">
+<p><b>Near-Maximum Circuit Lower Bounds for Exponential Time with Merlin-Arthur Queries</b>, with <a href="https://people.csail.mit.edu/rrw/">Ryan Williams</a></p>
+<ul>
+<li><p>[<a href="https://eccc.weizmann.ac.il/report/2026/118">ECCC</a>],
+[<a href="https://arxiv.org/abs/2607.09963">arXiv</a>],
+[<span class="title" onclick="toggle('summary-smartEprMA')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
+</ul>
+<div id="summary-smartEprMA" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> We prove a near-maximum ($2^n / n$) circuit lower bound for $\mathsf{E}^{\mathrm{pr}\mathsf{MA}}/_1$. In addition, our hard function can be computed with <i>smart</i> oracle access to $\mathrm{pr}\mathsf{MA}$, i.e., every query is <b>inside</b> the $\mathrm{pr}\mathsf{MA}$ promise.</div>
+<ul><li><p>To appear in IEEE Symposium on Foundations of Computer Science (FOCS) 2026</p></li></ul>
+</div>
+<div class="paper-entry" data-tags="proof complexity">
+<p><b>The Weak Rank Principle: Lower Bounds and Applications</b>, with <a href="https://dblp.org/pid/160/4469.html">Michal Garlík</a>, <a href="https://dblp.org/pid/243/3837.html">Svyatoslav Gryaznov</a>, and <a href="https://www.doc.ic.ac.uk/~itzamere/">Iddo Tzameret</a></p>
+<ul>
+<li><p>[<a href="https://eccc.weizmann.ac.il/report/2026/133/">ECCC</a>],
+[<a href="https://arxiv.org/abs/2608.08760">arXiv</a>],
+[<a href="files/slides/slides_Oxford_wRank.pptx">Slides</a> at Oxford proof complexity workshop (focuses on applications)],
+[<span class="title" onclick="toggle('summary-weak-rank-principle')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
+</ul>
+<div id="summary-weak-rank-principle" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> We investigate the proof complexity of the <b>rank principle</b>, which states that for $n < m$, the product of an $m\times n$ matrix $X$ and an $n\times m$ matrix $Y$ cannot be equal to the $m\times m$ identity matrix. The regime where $n$ is <i>much</i> smaller than $m$ is called the <b>weak</b> rank principle. We prove that the weak rank principle is hard for many proof systems such as Polynomial Calculus with Resolution (PCR) and Sherali-Adams (SA). In fact, we prove that these proof systems cannot prove the rank of <b>any</b> matrix to be small, hence establishing new proof complexity generators. We also explore the connection between weak rank principles and the (un)provability of circuit lower bounds.</div>
+<ul><li><p>In ACM Symposium on Theory of Computing (STOC) 2026</p><ul><li><a href="https://doi.org/10.1145/3798129.3800735">Proceeding version</a> (<a href="files/pdf/stoc26_wRank.pdf">local</a>).</li></ul></li></ul>
+</div>
+
+<h2>Selected Papers</h2>
+
 <div class="paper-entry" data-tags="proof complexity,meta-complexity,TFNP">
 <p><b>Finding Bugs in Short Proofs: The Metamathematics of Resolution Lower Bounds</b>, with <a href="https://www.cs.utexas.edu/~davidlee/">Jiawei Li</a> and <a href="https://yuhao.li/">Yuhao Li</a></p>
 <ul>
