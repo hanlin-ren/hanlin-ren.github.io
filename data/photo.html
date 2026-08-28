@@ -1,0 +1,37 @@
+<!--
+  Profile-photo configuration. Each page load picks either entry with equal
+  probability. Edit the two objects below to change images or captions.
+-->
+<div id="profile-photo" style="float: right;">
+<noscript>
+<img src="files/photos/2023.jpg" alt="Hanlin Ren" width="300" />
+<p>photo (2023) by Rahul Ilango</p>
+</noscript>
+</div>
+<script>
+(function () {
+  var photos = [
+    {
+      src: "files/photos/2023.jpg",
+      caption: "photo (2023) by Rahul Ilango"
+    },
+    {
+      src: "files/photos/2026.png",
+      caption: "photo (2026) by Claire"
+    }
+  ];
+
+  var selected = photos[Math.random() < 0.5 ? 0 : 1];
+  var container = document.getElementById("profile-photo");
+  var image = document.createElement("img");
+  var caption = document.createElement("p");
+
+  image.src = selected.src;
+  image.alt = "Hanlin Ren";
+  image.width = 300;
+  caption.textContent = selected.caption;
+
+  container.appendChild(image);
+  container.appendChild(caption);
+})();
+</script>
