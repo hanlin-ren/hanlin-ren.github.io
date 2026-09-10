@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="generate.py" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="academic.css" type="text/css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Bright/cmun-bright.css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Bright Semibold/cmun-bright-semibold.css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Classical Serif Italic/cmun-bright-semibold.css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Concrete/cmun-concrete.css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Sans/cmun-sans.css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Sans Demi-Condensed/cmun-sans-demicondensed.css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Serif/cmun-serif.css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Serif Slanted/cmun-serif-slanted.css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Typewriter/cmun-typewriter.css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Typewriter Light/cmun-typewriter-light.css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Typewriter Variable/cmun-typewriter-variable.css" />
+<link rel="stylesheet" href="Computer Modern Fonts/Upright Italic/cmun-upright-italic.css" />
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script>
+<script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+<script>
+function toggle(id) {
+  var e = document.getElementById(id);
+  if (!e) return;
+  e.style.display = (e.style.display === "none") ? "block" : "none";
+}
+</script>
+<title>Exposition — Hanlin Ren</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Hanlin Ren</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="publications.html">Publications</a></div>
+<div class="menu-item"><a href="exposition.html" class="current">Exposition</a></div>
+<div class="menu-item"><a href="files/CV/CV.pdf">CV</a></div>
+<div class="menu-item"><a href="files/pdf/DPhil_thesis.pdf">DPhil&nbsp;Thesis</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle"><h1>Exposition</h1></div>
+
+<p>Occasionally, I write expositions of other results that I found interesting. In these expositions, I present the proofs of these results in a way that I myself finds the most intuitive and easy to understand. I hope that other researchers will also find these expositions useful, so I make some of the most polished ones public.</p>
+<p>Disclaimer:</p>
+<ol>
+<li><p>Sometimes I will sacrifice rigor for intuition and easier understanding.</p>
+</li>
+<li><p>All the mistakes are solely mine.</p>
+</li>
+</ol>
+
+<h2>Exposition List</h2>
+
+<div id="tag-filter" style="margin-bottom:1em;"><b>Filter by topic:</b> <span class="tag-badge" data-tag="">all</span> <span class="tag-badge" data-tag="circuit lower bounds">circuit lower bounds</span> <span class="tag-badge" data-tag="relativization">relativization</span> <span class="tag-badge" data-tag="cryptography">cryptography</span> <span class="tag-badge" data-tag="meta-complexity">meta-complexity</span> &nbsp;<span id="filter-count" style="color:#666;font-size:0.9em;"></span></div>
+<script>
+(function () {
+  var active = '';
+
+  function updateFilter() {
+    var btns = document.querySelectorAll('#tag-filter .tag-badge');
+    for (var i = 0; i < btns.length; i++) {
+      var t = btns[i].getAttribute('data-tag');
+      btns[i].classList.toggle('active', active === '' ? t === '' : t === active);
+    }
+
+    var entries = document.querySelectorAll('.paper-entry');
+    for (var i = 0; i < entries.length; i++) {
+      if (!active) { entries[i].style.display = ''; continue; }
+      var tags = (entries[i].getAttribute('data-tags') || '').split(',');
+      var match = false;
+      for (var j = 0; j < tags.length; j++) {
+        if (tags[j] === active) { match = true; break; }
+      }
+      entries[i].style.display = match ? '' : 'none';
+    }
+
+    var label = document.getElementById('filter-count');
+    if (label) {
+      if (!active) { label.textContent = ''; return; }
+      var shown = 0;
+      var entries2 = document.querySelectorAll('.paper-entry');
+      for (var i = 0; i < entries2.length; i++) {
+        if (entries2[i].style.display !== 'none') shown++;
+      }
+      label.textContent = shown + ' exposition' + (shown === 1 ? '' : 's') + ' shown';
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    updateFilter(); /* mark "all" active on load */
+    var btns = document.querySelectorAll('#tag-filter .tag-badge');
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].style.cursor = 'pointer';
+      btns[i].addEventListener('click', function () {
+        var t = this.getAttribute('data-tag');
+        /* clicking "all", or clicking the already-active tag → show all */
+        active = (t === '' || active === t) ? '' : t;
+        updateFilter();
+      });
+    }
+  });
+})();
+</script>
+
+<div class="paper-entry" data-tags="circuit lower bounds,relativization">
+<p><b>From Ignorant Decision Trees to Barriers to Infinitely-Often Lower Bounds</b></p>
+<ul>
+<li><p>[<a href="files/expositions/ignorance.pdf">PDF</a>],
+[<span class="title" onclick="toggle('summary-ignorance')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
+</ul>
+<div id="summary-ignorance" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> I wrote this exposition when I was confused about the claims in <a href="https://doi.org/10.1109/CCC.1998.694585">[BFT'98]</a> and <a href="https://arxiv.org/abs/cs/0504048">[Aaronson'06]</a> that there is an oracle world relative to which $\mathsf{MA}_{\mathsf{EXP}}$ and $\mathsf{PEXP}$ have polynomial-size circuits. Proving a ($\mathsf{MA}^{\mathsf{dt}}$ or $\mathsf{PP}^{\mathsf{dt}}$) decision-tree lower bound for the Missing-String problem only gives an oracle world where such circuit upper bounds hold <i>infinitely often</i>. In this exposition, we identify a property called <b>ignorance</b> which is (slightly) stronger than lower bounds for Missing-String, and show that ignorance of decision trees imply <i>almost everywhere</i> circuit upper bounds in oracle worlds. We also rephrase the oracle separations of <a href="https://doi.org/10.1109/CCC.1998.694585">[BFT'98]</a> and <a href="https://arxiv.org/abs/cs/0504048">[Aaronson'06]</a> in terms of decision tree lower bounds for Missing-String.</div>
+</div>
+<div class="paper-entry" data-tags="cryptography,meta-complexity">
+<p><b>Hardness Along the Boundary: Towards One-Way Functions from the Worst-case Hardness of Time-Bounded Kolmogorov Complexity</b>, originally by <a href="https://www.cs.cornell.edu/~yanyiliu/">Yanyi Liu</a> and <a href="https://www.cs.cornell.edu/~rafael/">Rafael Pass</a></p>
+<ul>
+<li><p>[<a href="files/expositions/LP25-exposition.pdf">PDF</a>],
+[<span class="title" onclick="toggle('summary-boundary-Kt-OWF')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
+</ul>
+<div id="summary-boundary-Kt-OWF" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> The main result I write about is that the worst-case hardness of the "boundary $\mathrm{K}^{\mathrm{poly}}$" problem implies the existence of one-way functions. I also discuss the possibility of using their results to base the existence of OWFs on the exponential hardness of (the standard gap version of) time-bounded Kolmogorov complexity.</div>
+</div>
+<div class="paper-entry" data-tags="meta-complexity">
+<p><b>Failure of Symmetry of Information for Randomized Computations</b>, originally by <a href="https://jinqiaohu.github.io/">Jinqiao Hu</a>, Yahel Manor, and <a href="https://www.dcs.warwick.ac.uk/~igorcarb/">Igor C. Oliveira</a></p>
+<ul>
+<li><p>[<a href="files/expositions/HMO26-exposition.pdf">PDF</a>],
+[<span class="title" onclick="toggle('summary-failure-of-SoI')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
+</ul>
+<div id="summary-failure-of-SoI" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> The main result I write about is that SoI for $\mathrm{rKt}$ implies a fast randomized algorithm for $\mathrm{rKt}$. I also improve their results by removing a $\log n$ factor in the overhead using a simpler proof.</div>
+</div>
+<div class="paper-entry" data-tags="meta-complexity">
+<p><b>Lower Bounds for Levin–Kolmogorov Complexity</b>, originally by <a href="https://nicholasbrandt.de/">Nicholas Brandt</a></p>
+<ul>
+<li><p>[<a href="files/expositions/Brandt24-exposition.pdf">PDF</a>],
+[<span class="title" onclick="toggle('summary-MKtP-LB')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
+</ul>
+<div id="summary-MKtP-LB" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> I write about a simplified proof of this paper's main result that $\mathrm{MKtP} \not\in \mathsf{DTIME}[O(n)]$, found by GPT-6 Astra.</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

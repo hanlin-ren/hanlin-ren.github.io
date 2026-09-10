@@ -26,7 +26,7 @@ MathJax = {
   }
 };
 </script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
 <script>
 function toggle(id) {
   var e = document.getElementById(id);
@@ -43,6 +43,7 @@ function toggle(id) {
 <div class="menu-category">Hanlin Ren</div>
 <div class="menu-item"><a href="index.html" class="current">Home</a></div>
 <div class="menu-item"><a href="publications.html">Publications</a></div>
+<div class="menu-item"><a href="exposition.html">Exposition</a></div>
 <div class="menu-item"><a href="files/CV/CV.pdf">CV</a></div>
 <div class="menu-item"><a href="files/pdf/DPhil_thesis.pdf">DPhil&nbsp;Thesis</a></div>
 </td>
@@ -50,7 +51,6 @@ function toggle(id) {
 <div id="toptitle">
 <h1>Hanlin Ren</h1>
 </div>
-
 <!--
   Profile-photo configuration. Each page load picks either entry with equal
   probability. Edit the two objects below to change images or captions.
@@ -66,11 +66,13 @@ function toggle(id) {
   var photos = [
     {
       src: "files/photos/2023.jpg",
-      caption: "photo (2023) by Rahul Ilango"
+      caption: "photo (2023) by Rahul Ilango",
+      href: ""
     },
     {
       src: "files/photos/2026.png",
-      caption: "photo (2026) by Claire"
+      caption: "photo (2026) by Claire",
+      href: "https://kasaneteto.jp/"
     }
   ];
 
@@ -84,34 +86,35 @@ function toggle(id) {
   image.width = 300;
   caption.textContent = selected.caption;
 
-  container.appendChild(image);
+  if (selected.href) {
+    var link = document.createElement("a");
+    link.href = selected.href;
+    link.appendChild(image);
+    container.appendChild(link);
+  } else {
+    container.appendChild(image);
+  }
   container.appendChild(caption);
 })();
 </script>
 
-
-<p>I am a postdoctoral member at the <a href="https://www.ias.edu/math">School of Mathematics, Institute for Advanced Study</a>. Previously, I was a DPhil student at the <a href="https://cs.ox.ac.uk">University of Oxford</a>, very fortunately advised by <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/">Prof. Rahul Santhanam</a>. I was a member of <a href="https://www.chch.ox.ac.uk/">Christ Church</a> and also a <a href="https://www.ox.ac.uk/clarendon">Clarendon</a> scholar. Before that, I was an undergraduate student at <a href="http://iiis.tsinghua.edu.cn/en">Institute for Interdisciplinary Information Sciences</a>, Tsinghua University.</p>
-
+<p>I am a postdoctoral member at the <a href="https://www.ias.edu/math" target=&ldquo;blank&rdquo;>School of Mathematics, Institute for Advanced Study</a>. Previously, I was a DPhil student at the <a href="https://cs.ox.ac.uk" target=&ldquo;blank&rdquo;>University of Oxford</a>, very fortunately advised by <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/" target=&ldquo;blank&rdquo;>Prof. Rahul Santhanam</a>. I was a member of <a href="https://www.chch.ox.ac.uk/" target=&ldquo;blank&rdquo;>Christ Church</a> and also a <a href="https://www.ox.ac.uk/clarendon" target=&ldquo;blank&rdquo;>Clarendon</a> scholar. Before that, I was an undergraduate student at <a href="http://iiis.tsinghua.edu.cn/en" target=&ldquo;blank&rdquo;>Institute for Interdisciplinary Information Sciences</a>, Tsinghua University.</p>
 <p>I have a broad interest in theoretical computer science. Currently, I am interested in <b>computational complexity</b>, which studies the limitations of efficient computation. Some topics of complexity theory that I find fascinating are <b>circuit complexity</b>, <b>proof complexity</b>, <b>meta-complexity</b>, <b>explicit constructions</b>, and <b>average-case complexity</b>.</p>
-
-<p>At Tsinghua, I was advised by <a href="https://iiis.tsinghua.edu.cn/en/People/Faculty/DuanRan.htm">Prof. Ran Duan</a> and worked on <b>graph algorithms</b>. One emphasis of my research was to design shortest-path data structures for graphs in the presence of failures.</p>
-
-<p>[<a href="https://scholar.google.com/citations?user=d7WVkWYAAAAJ">Google Scholar</a>], [<a href="https://dblp.org/pers/r/Ren:Hanlin.html">DBLP</a>], [<a href="https://twitter.com/dfc7027894e168c">Twitter</a>], [<a href="https://orcid.org/0000-0002-7632-7574">ORCID</a>]</p>
-
+<p>At Tsinghua, I was advised by <a href="https://iiis.tsinghua.edu.cn/en/People/Faculty/DuanRan.htm" target=&ldquo;blank&rdquo;>Prof. Ran Duan</a> and worked on <b>graph algorithms</b>. One emphasis of my research was to design shortest-path data structures for graphs in the presence of failures.</p>
+<p>[<a href="https://scholar.google.com/citations?user=d7WVkWYAAAAJ" target=&ldquo;blank&rdquo;>Google Scholar</a>], [<a href="https://dblp.org/pers/r/Ren:Hanlin.html" target=&ldquo;blank&rdquo;>DBLP</a>], [<a href="https://twitter.com/dfc7027894e168c" target=&ldquo;blank&rdquo;>Twitter</a>], [<a href="https://orcid.org/0000-0002-7632-7574" target=&ldquo;blank&rdquo;>ORCID</a>]</p>
 <p>Contact:</p>
 <ul>
-<li><tt>h4n1in {DOT} r3n &lt;AT&gt; gmail {DOT} com</tt>. (recommended)</li>
-<li><tt>h {DOT} ren &lt;AT&gt; ias {DOT} edu</tt>.</li>
+<li><p><tt>h4n1in {DOT} r3n &lt;AT&gt; gmail {DOT} com</tt>. (recommended)</p>
+</li>
+<li><p><tt>h {DOT} ren &lt;AT&gt; ias {DOT} edu</tt>.</p>
+</li>
 </ul>
-
 <h2>News</h2>
-<p>Mar 2026: <a href="files/slides/slides_Mar_10_2026.pptx">Slides</a>, <a href="https://youtu.be/rpGu4LDLOaM">first part</a>, <a href="https://youtu.be/CQSbs1GJz60">second part</a> of my talk on reverse mathematics of complexity lower bounds at IAS CSDM Seminar.</p>
-
+<p>Sep 2026: I'm visiting the <a href="https://www.newton.ac.uk/event/lfc/" target=&ldquo;blank&rdquo;>Logical Foundations of Complexity Theory program at Isaac Newton Institute</a> in 2026 Fall!</p>
+<p>Mar 2026: <a href="files/slides/slides_Mar_10_2026.pptx" target=&ldquo;blank&rdquo;>Slides</a>, <a href="https://youtu.be/rpGu4LDLOaM" target=&ldquo;blank&rdquo;>first part</a>, <a href="https://youtu.be/CQSbs1GJz60" target=&ldquo;blank&rdquo;>second part</a> of my talk on reverse mathematics of complexity lower bounds at IAS CSDM Seminar.</p>
 <p>Sep 2025: Very excited to join the IAS!</p>
-
-<p>Feb 2024: I'm visiting <a href="https://researchmap.jp/shuichi.hirahara/?lang=english">Shuichi Hirahara</a> in 2024 Spring!</p>
-
-<p>Jan 2023: I'm visiting <a href="https://chen-lijie.github.io/">Lijie Chen</a> and the <a href="https://simons.berkeley.edu/programs/Meta-Complexity2023">Meta-Complexity program at Simons Institute</a> in 2023 Spring.</p>
+<p>Feb 2024: I'm visiting <a href="https://researchmap.jp/shuichi.hirahara/?lang=english" target=&ldquo;blank&rdquo;>Shuichi Hirahara</a> in 2024 Spring!</p>
+<p>Jan 2023: I'm visiting <a href="https://chen-lijie.github.io/" target=&ldquo;blank&rdquo;>Lijie Chen</a> and the <a href="https://simons.berkeley.edu/programs/Meta-Complexity2023" target=&ldquo;blank&rdquo;>Meta-Complexity program at Simons Institute</a> in 2023 Spring.</p>
 
 
 <h2>Recent Papers</h2>
@@ -131,6 +134,7 @@ function toggle(id) {
 <ul>
 <li><p>[<a href="https://eccc.weizmann.ac.il/report/2026/118">ECCC</a>],
 [<a href="https://arxiv.org/abs/2607.09963">arXiv</a>],
+[<a href="files/slides/slides_INI_EprMA.pptx">Slides</a> and <a href="https://youtu.be/R7GtsB_enr8">video</a> at Issac Newton Institute (targeted at experts)],
 [<span class="title" onclick="toggle('summary-smartEprMA')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
 </ul>
 <div id="summary-smartEprMA" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> We prove a near-maximum ($2^n / n$) circuit lower bound for $\mathsf{E}^{\mathrm{pr}\mathsf{MA}}/_1$. In addition, our hard function can be computed with <i>smart</i> oracle access to $\mathrm{pr}\mathsf{MA}$, i.e., every query is <b>inside</b> the $\mathrm{pr}\mathsf{MA}$ promise.</div>
@@ -145,7 +149,7 @@ function toggle(id) {
 [<span class="title" onclick="toggle('summary-weak-rank-principle')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
 </ul>
 <div id="summary-weak-rank-principle" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> We investigate the proof complexity of the <b>rank principle</b>, which states that for $n < m$, the product of an $m\times n$ matrix $X$ and an $n\times m$ matrix $Y$ cannot be equal to the $m\times m$ identity matrix. The regime where $n$ is <i>much</i> smaller than $m$ is called the <b>weak</b> rank principle. We prove that the weak rank principle is hard for many proof systems such as Polynomial Calculus with Resolution (PCR) and Sherali-Adams (SA). In fact, we prove that these proof systems cannot prove the rank of <b>any</b> matrix to be small, hence establishing new proof complexity generators. We also explore the connection between weak rank principles and the (un)provability of circuit lower bounds.</div>
-<ul><li><p>In ACM Symposium on Theory of Computing (STOC) 2026</p><ul><li><a href="https://doi.org/10.1145/3798129.3800735">Proceeding version</a> (<a href="files/pdf/stoc26_wRank.pdf">local</a>).</li></ul></li></ul>
+<ul><li><p>In ACM Symposium on Theory of Computing (STOC) 2026</p><ul><li><a href="https://doi.org/10.1145/3798129.3800735">Proceeding version</a> (<a href="files/pdf/stoc26_wRank.pdf">local</a>), <a href="https://youtu.be/x_-C8BiZdH4">Michal's talk</a>.</li></ul></li></ul>
 </div>
 
 <h2>Selected Papers</h2>

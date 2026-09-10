@@ -13,11 +13,13 @@
   var photos = [
     {
       src: "files/photos/2023.jpg",
-      caption: "photo (2023) by Rahul Ilango"
+      caption: "photo (2023) by Rahul Ilango",
+      href: ""
     },
     {
       src: "files/photos/2026.png",
-      caption: "photo (2026) by Claire"
+      caption: "photo (2026) by Claire",
+      href: "https://kasaneteto.jp/"
     }
   ];
 
@@ -31,7 +33,14 @@
   image.width = 300;
   caption.textContent = selected.caption;
 
-  container.appendChild(image);
+  if (selected.href) {
+    var link = document.createElement("a");
+    link.href = selected.href;
+    link.appendChild(image);
+    container.appendChild(link);
+  } else {
+    container.appendChild(image);
+  }
   container.appendChild(caption);
 })();
 </script>

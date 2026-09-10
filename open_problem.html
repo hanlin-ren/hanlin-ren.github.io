@@ -18,14 +18,12 @@
 <link rel="stylesheet" href="Computer Modern Fonts/Typewriter Variable/cmun-typewriter-variable.css"></link>
 <link rel="stylesheet" href="Computer Modern Fonts/Upright Italic/cmun-upright-italic.css"></link>
 <title>Open Problems</title>
-        <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' async>
+        <script>
+        MathJax = {
+          tex: { tags: "ams" }
+        };
         </script>
-        <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-          showProcessingMessages: false,
-          TeX: { equationNumbers: { autoNumber: "AMS" } }
-        });
-        </script>
+        <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script>
           function toggle(pId) {

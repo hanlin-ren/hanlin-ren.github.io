@@ -26,7 +26,7 @@ MathJax = {
   }
 };
 </script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
 <script>
 function toggle(id) {
   var e = document.getElementById(id);
@@ -43,6 +43,7 @@ function toggle(id) {
 <div class="menu-category">Hanlin Ren</div>
 <div class="menu-item"><a href="index.html">Home</a></div>
 <div class="menu-item"><a href="publications.html" class="current">Publications</a></div>
+<div class="menu-item"><a href="exposition.html">Exposition</a></div>
 <div class="menu-item"><a href="files/CV/CV.pdf">CV</a></div>
 <div class="menu-item"><a href="files/pdf/DPhil_thesis.pdf">DPhil&nbsp;Thesis</a></div>
 </td>
@@ -108,6 +109,7 @@ function toggle(id) {
 <ul>
 <li><p>[<a href="https://eccc.weizmann.ac.il/report/2026/118">ECCC</a>],
 [<a href="https://arxiv.org/abs/2607.09963">arXiv</a>],
+[<a href="files/slides/slides_INI_EprMA.pptx">Slides</a> and <a href="https://youtu.be/R7GtsB_enr8">video</a> at Issac Newton Institute (targeted at experts)],
 [<span class="title" onclick="toggle('summary-smartEprMA')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
 </ul>
 <div id="summary-smartEprMA" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> We prove a near-maximum ($2^n / n$) circuit lower bound for $\mathsf{E}^{\mathrm{pr}\mathsf{MA}}/_1$. In addition, our hard function can be computed with <i>smart</i> oracle access to $\mathrm{pr}\mathsf{MA}$, i.e., every query is <b>inside</b> the $\mathrm{pr}\mathsf{MA}$ promise.</div>
@@ -143,7 +145,7 @@ function toggle(id) {
 [<span class="title" onclick="toggle('summary-weak-rank-principle')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
 </ul>
 <div id="summary-weak-rank-principle" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> We investigate the proof complexity of the <b>rank principle</b>, which states that for $n < m$, the product of an $m\times n$ matrix $X$ and an $n\times m$ matrix $Y$ cannot be equal to the $m\times m$ identity matrix. The regime where $n$ is <i>much</i> smaller than $m$ is called the <b>weak</b> rank principle. We prove that the weak rank principle is hard for many proof systems such as Polynomial Calculus with Resolution (PCR) and Sherali-Adams (SA). In fact, we prove that these proof systems cannot prove the rank of <b>any</b> matrix to be small, hence establishing new proof complexity generators. We also explore the connection between weak rank principles and the (un)provability of circuit lower bounds.</div>
-<ul><li><p>In ACM Symposium on Theory of Computing (STOC) 2026</p><ul><li><a href="https://doi.org/10.1145/3798129.3800735">Proceeding version</a> (<a href="files/pdf/stoc26_wRank.pdf">local</a>).</li></ul></li></ul>
+<ul><li><p>In ACM Symposium on Theory of Computing (STOC) 2026</p><ul><li><a href="https://doi.org/10.1145/3798129.3800735">Proceeding version</a> (<a href="files/pdf/stoc26_wRank.pdf">local</a>), <a href="https://youtu.be/x_-C8BiZdH4">Michal's talk</a>.</li></ul></li></ul>
 </div>
 <div class="paper-entry" data-tags="range avoidance,proof complexity,cryptography">
 <p><b>Hardness of Range Avoidance and Proof Complexity Generators from Demi-Bits</b>, with <a href="https://wyc908.github.io/">Yichuan Wang</a> and <a href="https://www.yan-zhong.com/">Yan Zhong</a></p>
