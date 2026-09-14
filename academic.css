@@ -67,3 +67,117 @@
 #tag-filter .tag-badge:hover {
     border-color: #668;
 }
+
+/* Mobile layout. Desktop styling remains controlled by jemdoc.css. */
+@media screen and (max-width: 760px) {
+    html {
+        -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+        overflow-x: hidden;
+        padding-bottom: 0;
+    }
+
+    table#tlayout,
+    table#tlayout > tbody,
+    table#tlayout > tbody > tr {
+        display: block;
+        width: 100%;
+    }
+
+    #layout-menu,
+    #layout-content {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        min-width: 0;
+        max-width: none;
+    }
+
+    #layout-menu {
+        padding: 0.65rem 0.75rem 0.45rem;
+        border: 0;
+        border-bottom: 1px solid #dddddd;
+        white-space: normal;
+    }
+
+    #layout-menu .menu-category {
+        margin: 0 0 0.4rem;
+        padding: 0 0 0.3rem;
+    }
+
+    #layout-menu .menu-item {
+        display: inline-block;
+        margin: 0 0.15rem 0.25rem 0;
+        padding: 0;
+        text-indent: 0;
+    }
+
+    #layout-menu a,
+    #layout-menu a:link,
+    #layout-menu a:visited,
+    #layout-menu a:hover {
+        display: inline-block;
+        margin: 0;
+        padding: 0.35rem 0.5rem;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        line-height: 1.2;
+    }
+
+    #layout-menu a.current:link,
+    #layout-menu a.current:visited {
+        border: 1px solid #cbd3df;
+        background: #e9eef5;
+    }
+
+    #layout-content {
+        padding: 0.75rem 1rem 2rem;
+        overflow-wrap: anywhere;
+    }
+
+    div#toptitle {
+        margin-bottom: 1rem;
+    }
+
+    div#toptitle h1,
+    #layout-content div#toptitle h1 {
+        font-size: 1.7em;
+        line-height: 1.15;
+    }
+
+    #profile-photo {
+        float: none !important;
+        margin: 0 auto 1.25rem;
+        text-align: center;
+    }
+
+    #profile-photo img {
+        display: block;
+        width: min(100%, 300px);
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #profile-photo p {
+        margin: 0.35rem 0 0;
+    }
+
+    #tag-filter {
+        line-height: 1.8;
+    }
+
+    .paper-entry ul,
+    .paper-entry ol {
+        padding-left: 1.25em;
+    }
+
+    .bibtex-panel,
+    pre,
+    mjx-container[display="true"] {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+}
