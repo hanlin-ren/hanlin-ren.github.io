@@ -44,14 +44,14 @@ function toggle(id) {
 <div class="menu-category">Hanlin Ren</div>
 <div class="menu-item"><a href="index.html">Home</a></div>
 <div class="menu-item"><a href="publications.html" class="current">Publications</a></div>
-<div class="menu-item"><a href="exposition.html">Exposition</a></div>
+<div class="menu-item"><a href="exposition.html">Expositions</a></div>
 <div class="menu-item"><a href="files/CV/CV.pdf">CV</a></div>
 <div class="menu-item"><a href="files/pdf/DPhil_thesis.pdf">DPhil&nbsp;Thesis</a></div>
 </td>
 <td id="layout-content">
 <div id="toptitle"><h1>Publications</h1></div>
 
-<div id="tag-filter" style="margin-bottom:1em;"><b>Filter by topic:</b> <span class="tag-badge" data-tag="">all</span> <span class="tag-badge" data-tag="circuit complexity">circuit complexity</span> <span class="tag-badge" data-tag="iterative win-win">iterative win-win</span> <span class="tag-badge" data-tag="range avoidance">range avoidance</span> <span class="tag-badge" data-tag="proof complexity">proof complexity</span> <span class="tag-badge" data-tag="cryptography">cryptography</span> <span class="tag-badge" data-tag="meta-complexity">meta-complexity</span> <span class="tag-badge" data-tag="TFNP">TFNP</span> <span class="tag-badge" data-tag="relativization and algebrization">relativization and algebrization</span> <span class="tag-badge" data-tag="pseudodeterministic algorithms">pseudodeterministic algorithms</span> <span class="tag-badge" data-tag="algorithmic method">algorithmic method</span> <span class="tag-badge" data-tag="graph algorithms">graph algorithms</span> <span class="tag-badge" data-tag="average-case complexity">average-case complexity</span> &nbsp;<span id="filter-count" style="color:#666;font-size:0.9em;"></span></div>
+<div id="tag-filter" style="margin-bottom:1em;"><b>Filter by topic:</b> <span class="tag-badge" data-tag="">all</span> <span class="tag-badge" data-tag="proof complexity">proof complexity</span> <span class="tag-badge" data-tag="range avoidance">range avoidance</span> <span class="tag-badge" data-tag="cryptography">cryptography</span> <span class="tag-badge" data-tag="circuit complexity">circuit complexity</span> <span class="tag-badge" data-tag="iterative win-win">iterative win-win</span> <span class="tag-badge" data-tag="meta-complexity">meta-complexity</span> <span class="tag-badge" data-tag="TFNP">TFNP</span> <span class="tag-badge" data-tag="relativization and algebrization">relativization and algebrization</span> <span class="tag-badge" data-tag="pseudodeterministic algorithms">pseudodeterministic algorithms</span> <span class="tag-badge" data-tag="algorithmic method">algorithmic method</span> <span class="tag-badge" data-tag="graph algorithms">graph algorithms</span> <span class="tag-badge" data-tag="average-case complexity">average-case complexity</span> &nbsp;<span id="filter-count" style="color:#666;font-size:0.9em;"></span></div>
 <script>
 (function () {
   var active = '';
@@ -105,6 +105,17 @@ function toggle(id) {
 <h2>Publications</h2>
 
 <p><i>(In theoretical computer science, the list of authors are usually sorted in alphabetical order.)</i></p>
+<div class="paper-entry" data-tags="proof complexity,range avoidance,cryptography">
+<p><b>Many Proof Complexity Generators Inside One Demi-Bits Generator</b>, with <a href="https://www.cs.jhu.edu/~lixints/">Xin Li</a> and <a href="https://www.yan-zhong.com/">Yan Zhong</a></p>
+<ul>
+<li><p>[<a href="https://eccc.weizmann.ac.il/report/2026/196">ECCC</a>],
+[<a href="https://arxiv.org/abs/2609.23228">arXiv</a>],
+[<a href="files/slides/slides_SUFE_demibits.pptx">Slides</a> at SUFE (focused on unprovability of circuit lower bounds)],
+[<span class="title" onclick="toggle('summary-many-PCGs')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
+</ul>
+<div id="summary-many-PCGs" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> For every demi-bits generator $G: \{0, 1\}^n \to \{0, 1\}^m$ ($m \ge 10n$) and every proof system $\mathcal{P}$, we show that a random subset of its outputs ($G|_I$, $I\gets 2^{[m]}$) forms a proof complexity generator for $\mathcal{P}$ with constant probability. This result is an <b>extremely simple</b> corollary of the <a href="https://en.wikipedia.org/wiki/Sauer%E2%80%93Shelah_lemma">Sauer–Shelah lemma</a>. Based on this result, we prove hardness of $\mathsf{NC}^0$-$\mathrm{Avoid}$ and $\mathsf{XOR}$-$\mathrm{RemotePoint}$ based on various hardness assumptions against nondeterministic algorithms.</div>
+<ul><li><p>To appear in IEEE Symposium on Foundations of Computer Science (FOCS) 2026</p></li></ul>
+</div>
 <div class="paper-entry" data-tags="circuit complexity,iterative win-win,range avoidance">
 <p><b>Near-Maximum Circuit Lower Bounds for Exponential Time with Merlin-Arthur Queries</b>, with <a href="https://people.csail.mit.edu/rrw/">Ryan Williams</a></p>
 <ul>
@@ -114,15 +125,6 @@ function toggle(id) {
 [<span class="title" onclick="toggle('summary-smartEprMA')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
 </ul>
 <div id="summary-smartEprMA" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> We prove a near-maximum ($2^n / n$) circuit lower bound for $\mathsf{E}^{\mathrm{pr}\mathsf{MA}}/_1$. In addition, our hard function can be computed with <i>smart</i> oracle access to $\mathrm{pr}\mathsf{MA}$, i.e., every query is <b>inside</b> the $\mathrm{pr}\mathsf{MA}$ promise.</div>
-<ul><li><p>To appear in IEEE Symposium on Foundations of Computer Science (FOCS) 2026</p></li></ul>
-</div>
-<div class="paper-entry" data-tags="proof complexity,range avoidance,cryptography">
-<p><b>Many Proof Complexity Generators Inside One Demi-Bits Generator</b>, with <a href="https://www.cs.jhu.edu/~lixints/">Xin Li</a> and <a href="https://www.yan-zhong.com/">Yan Zhong</a></p>
-<ul>
-<li><p>[<a href="files/slides/slides_SUFE_demibits.pptx">Slides</a> at SUFE (focused on unprovability of circuit lower bounds)],
-[<span class="title" onclick="toggle('summary-many-PCGs')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
-</ul>
-<div id="summary-many-PCGs" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> For every demi-bits generator $G: \{0, 1\}^n \to \{0, 1\}^m$ ($m \ge 10n$) and every proof system $\mathcal{P}$, we show that a random subset of its outputs ($G|_I$, $I\gets 2^{[m]}$) forms a proof complexity generator for $\mathcal{P}$ with constant probability. This result is an <b>extremely simple</b> corollary of the <a href="https://en.wikipedia.org/wiki/Sauer%E2%80%93Shelah_lemma">Sauer–Shelah lemma</a>. Based on this result, we prove hardness of $\mathsf{NC}^0$-$\mathrm{Avoid}$ and $\mathsf{XOR}$-$\mathrm{RemotePoint}$ based on various hardness assumptions against nondeterministic algorithms.</div>
 <ul><li><p>To appear in IEEE Symposium on Foundations of Computer Science (FOCS) 2026</p></li></ul>
 </div>
 <div class="paper-entry" data-tags="proof complexity,meta-complexity,TFNP">
