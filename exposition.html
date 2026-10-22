@@ -51,7 +51,7 @@ function toggle(id) {
 <td id="layout-content">
 <div id="toptitle"><h1>Exposition</h1></div>
 
-<p>Occasionally, I write expositions of other results that I found interesting. In these expositions, I present the proofs of these results in a way that I myself finds the most intuitive and easy to understand. I hope that other researchers will also find these expositions useful, so I make some of the most polished ones public.</p>
+<p>Occasionally, I write expositions of other results that I found interesting. <b>This also includes AI-generated results that I do not feel that I made enough contribution or deserve the credit.</b> In these expositions, I present the proofs of these results in a way that I myself finds the most intuitive and easy to understand. I hope that other researchers will also find these expositions useful, so I make some of the most polished ones public.</p>
 <p>Disclaimer:</p>
 <ol>
 <li><p>Sometimes I will sacrifice rigor for intuition and easier understanding.</p>
@@ -62,7 +62,7 @@ function toggle(id) {
 
 <h2>Exposition List</h2>
 
-<div id="tag-filter" style="margin-bottom:1em;"><b>Filter by topic:</b> <span class="tag-badge" data-tag="">all</span> <span class="tag-badge" data-tag="circuit lower bounds">circuit lower bounds</span> <span class="tag-badge" data-tag="relativization">relativization</span> <span class="tag-badge" data-tag="cryptography">cryptography</span> <span class="tag-badge" data-tag="meta-complexity">meta-complexity</span> &nbsp;<span id="filter-count" style="color:#666;font-size:0.9em;"></span></div>
+<div id="tag-filter" style="margin-bottom:1em;"><b>Filter by topic:</b> <span class="tag-badge" data-tag="">all</span> <span class="tag-badge" data-tag="circuit lower bounds">circuit lower bounds</span> <span class="tag-badge" data-tag="relativization">relativization</span> <span class="tag-badge" data-tag="cryptography">cryptography</span> <span class="tag-badge" data-tag="meta-complexity">meta-complexity</span> <span class="tag-badge" data-tag="TFNP">TFNP</span> &nbsp;<span id="filter-count" style="color:#666;font-size:0.9em;"></span></div>
 <script>
 (function () {
   var active = '';
@@ -144,6 +144,14 @@ function toggle(id) {
 [<span class="title" onclick="toggle('summary-MKtP-LB')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
 </ul>
 <div id="summary-MKtP-LB" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> I write about a simplified proof of this paper's main result that $\mathrm{MKtP} \not\in \mathsf{DTIME}[O(n)]$, found by GPT-6 Astra.</div>
+</div>
+<div class="paper-entry" data-tags="TFNP">
+<p><b>Nephew reduces to Lossy</b></p>
+<ul>
+<li><p>[<a href="files/expositions/nephew_lossy.pdf">PDF</a>],
+[<span class="title" onclick="toggle('summary-nephew-lossy')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
+</ul>
+<div id="summary-nephew-lossy" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> Contrary to what we conjectured in <a href="https://arxiv.org/pdf/2512.01138">the TFZPP paper</a>, we show that there is a mapping problem from the Nephew problem to the Lossy-Code problem. The proof is found by GPT-6 Astra.</div>
 </div>
 </td>
 </tr>
