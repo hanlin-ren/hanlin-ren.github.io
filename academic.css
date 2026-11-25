@@ -68,6 +68,20 @@
     border-color: #668;
 }
 
+#news-toggle {
+    background: none;
+    border: 0;
+    padding: 0;
+    color: #224b8d;
+    font: inherit;
+    cursor: pointer;
+}
+
+#news-toggle:hover,
+#news-toggle:focus-visible {
+    text-decoration: underline;
+}
+
 /* Mobile layout. Desktop styling remains controlled by jemdoc.css. */
 @media screen and (max-width: 760px) {
     html {

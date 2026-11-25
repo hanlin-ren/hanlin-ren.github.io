@@ -110,17 +110,45 @@ function toggle(id) {
 <li><p><tt>h {DOT} ren &lt;AT&gt; ias {DOT} edu</tt>.</p>
 </li>
 </ul>
+
 <h2>News</h2>
+<p>Nov 2026: My 2-hour <a href="https://youtu.be/2xT_HXuyeIQ" target=&ldquo;blank&rdquo;>survey talk</a> on the Range Avoidance problem.</p>
 <p>Sep 2026: I'm visiting the <a href="https://www.newton.ac.uk/event/lfc/" target=&ldquo;blank&rdquo;>Logical Foundations of Complexity Theory program at Isaac Newton Institute</a> in 2026 Fall!</p>
 <p>Mar 2026: <a href="files/slides/slides_Mar_10_2026.pptx" target=&ldquo;blank&rdquo;>Slides</a>, <a href="https://youtu.be/rpGu4LDLOaM" target=&ldquo;blank&rdquo;>first part</a>, <a href="https://youtu.be/CQSbs1GJz60" target=&ldquo;blank&rdquo;>second part</a> of my talk on reverse mathematics of complexity lower bounds at IAS CSDM Seminar.</p>
+
+<div id="news-older" hidden="hidden">
 <p>Sep 2025: Very excited to join the IAS!</p>
 <p>Feb 2024: I'm visiting <a href="https://researchmap.jp/shuichi.hirahara/?lang=english" target=&ldquo;blank&rdquo;>Shuichi Hirahara</a> in 2024 Spring!</p>
 <p>Jan 2023: I'm visiting <a href="https://chen-lijie.github.io/" target=&ldquo;blank&rdquo;>Lijie Chen</a> and the <a href="https://simons.berkeley.edu/programs/Meta-Complexity2023" target=&ldquo;blank&rdquo;>Meta-Complexity program at Simons Institute</a> in 2023 Spring.</p>
+</div>
+<p><button type="button" id="news-toggle" aria-expanded="false" aria-controls="news-older">[Expand]</button></p>
+<script>
+(function () {
+  var button = document.getElementById("news-toggle");
+  var older = document.getElementById("news-older");
+  button.addEventListener("click", function () {
+    var expanded = older.hidden;
+    older.hidden = !expanded;
+    button.setAttribute("aria-expanded", String(expanded));
+    button.textContent = expanded ? "[Collapse]" : "[Expand]";
+  });
+})();
+</script>
 
+<h2>Manuscripts / In submission</h2>
+
+<p><i>(In theoretical computer science, the list of authors are usually sorted in alphabetical order.)</i></p>
+<div class="paper-entry" data-tags="bounded arithmetic,TFNP">
+<p><b>Approximate Counting and the Provability of Combinatorial Principles</b>, with <a href="https://www.oliverkorten.com/">Oliver Korten</a>, <a href="https://ljt12138.github.io/">Jiatu Li</a>, and <a href="https://www.dcs.warwick.ac.uk/~igorcarb/">Igor C. Oliveira</a></p>
+<ul>
+<li><p>[<a href="https://youtu.be/XX5GDU1AswI">Video</a>],
+[<span class="title" onclick="toggle('summary-manuscript-APX-vs-APC')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
+</ul>
+<div id="summary-manuscript-APX-vs-APC" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> Our main result is that in the relativized setting, the theory $\mathsf{APX}_1$ (defined in <a href="https://arxiv.org/abs/2602.09302">[CLOW'26]</a>) does not prove the retraction weak pigeonhole principle. Hence $\mathsf{APC}_1$ is not $\forall\Sigma_1^b$-conservative over $\mathsf{APX}_1$ in the relativized setting. We also extend this unprovability result to a large family of combinatorial principles in the style of <a href="https://www.brics.dk/RS/94/23/BRICS-RS-94-23.pdf">Riis</a>.</div>
+</div>
 
 <h2>Recent Papers</h2>
 
-<p><i>(In theoretical computer science, the list of authors are usually sorted in alphabetical order.)</i></p>
 <div class="paper-entry" data-tags="proof complexity,range avoidance,cryptography">
 <p><b>Many Proof Complexity Generators Inside One Demi-Bits Generator</b>, with <a href="https://www.cs.jhu.edu/~lixints/">Xin Li</a> and <a href="https://www.yan-zhong.com/">Yan Zhong</a></p>
 <ul>
@@ -128,10 +156,10 @@ function toggle(id) {
 [<a href="https://arxiv.org/abs/2609.23228">arXiv</a>],
 [<a href="files/slides/slides_SUFE_demibits.pptx">Slides</a> at SUFE (focused on unprovability of circuit lower bounds)],
 [<a href="files/slides/slides_INI_demibits.pptx">Slides</a> and <a href="http://youtu.be/WnF_oDpfJEM">video</a> at Isaac Newton Institute],
-[<span class="title" onclick="toggle('summary-many-PCGs')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
+[<span class="title" onclick="toggle('summary-recent-many-PCGs')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
 </ul>
-<div id="summary-many-PCGs" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> For every demi-bits generator $G: \{0, 1\}^n \to \{0, 1\}^m$ ($m \ge 10n$) and every proof system $\mathcal{P}$, we show that a random subset of its outputs ($G|_I$, $I\gets 2^{[m]}$) forms a proof complexity generator for $\mathcal{P}$ with constant probability. This result is an <b>extremely simple</b> corollary of the <a href="https://en.wikipedia.org/wiki/Sauer%E2%80%93Shelah_lemma">Sauer–Shelah lemma</a>. Based on this result, we prove hardness of $\mathsf{NC}^0$-$\mathrm{Avoid}$ and $\mathsf{XOR}$-$\mathrm{RemotePoint}$ based on various hardness assumptions against nondeterministic algorithms.</div>
-<ul><li><p>To appear in IEEE Symposium on Foundations of Computer Science (FOCS) 2026</p></li></ul>
+<div id="summary-recent-many-PCGs" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> For every demi-bits generator $G: \{0, 1\}^n \to \{0, 1\}^m$ ($m \ge 10n$) and every proof system $\mathcal{P}$, we show that a random subset of its outputs ($G|_I$, $I\gets 2^{[m]}$) forms a proof complexity generator for $\mathcal{P}$ with constant probability. This result is an <b>extremely simple</b> corollary of the <a href="https://en.wikipedia.org/wiki/Sauer%E2%80%93Shelah_lemma">Sauer–Shelah lemma</a>. Based on this result, we prove hardness of $\mathsf{NC}^0$-$\mathrm{Avoid}$ and $\mathsf{XOR}$-$\mathrm{RemotePoint}$ based on various hardness assumptions against nondeterministic algorithms.</div>
+<ul><li><p>In IEEE Symposium on Foundations of Computer Science (FOCS) 2026</p></li></ul>
 </div>
 <div class="paper-entry" data-tags="circuit complexity,iterative win-win,range avoidance">
 <p><b>Near-Maximum Circuit Lower Bounds for Exponential Time with Merlin-Arthur Queries</b>, with <a href="https://people.csail.mit.edu/rrw/">Ryan Williams</a></p>
@@ -139,36 +167,24 @@ function toggle(id) {
 <li><p>[<a href="https://eccc.weizmann.ac.il/report/2026/118">ECCC</a>],
 [<a href="https://arxiv.org/abs/2607.09963">arXiv</a>],
 [<a href="files/slides/slides_INI_EprMA.pptx">Slides</a> and <a href="https://youtu.be/R7GtsB_enr8">video</a> at Issac Newton Institute (targeted at experts)],
-[<span class="title" onclick="toggle('summary-smartEprMA')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
+[<span class="title" onclick="toggle('summary-recent-smartEprMA')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
 </ul>
-<div id="summary-smartEprMA" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> We prove a near-maximum ($2^n / n$) circuit lower bound for $\mathsf{E}^{\mathrm{pr}\mathsf{MA}}/_1$. In addition, our hard function can be computed with <i>smart</i> oracle access to $\mathrm{pr}\mathsf{MA}$, i.e., every query is <b>inside</b> the $\mathrm{pr}\mathsf{MA}$ promise.</div>
-<ul><li><p>To appear in IEEE Symposium on Foundations of Computer Science (FOCS) 2026</p></li></ul>
-</div>
-<div class="paper-entry" data-tags="proof complexity">
-<p><b>The Weak Rank Principle: Lower Bounds and Applications</b>, with <a href="https://dblp.org/pid/160/4469.html">Michal Garlík</a>, <a href="https://dblp.org/pid/243/3837.html">Svyatoslav Gryaznov</a>, and <a href="https://www.doc.ic.ac.uk/~itzamere/">Iddo Tzameret</a></p>
-<ul>
-<li><p>[<a href="https://eccc.weizmann.ac.il/report/2026/133/">ECCC</a>],
-[<a href="https://arxiv.org/abs/2608.08760">arXiv</a>],
-[<a href="files/slides/slides_Oxford_wRank.pptx">Slides</a> at Oxford proof complexity workshop (focuses on applications)],
-[<a href="https://youtu.be/kwB_TuYICe4">Part I</a> and <a href="https://youtu.be/_L1QJM7jhEI">Part II</a> of Svyatoslav's talk at Isaac Newton Institute],
-[<span class="title" onclick="toggle('summary-weak-rank-principle')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
-</ul>
-<div id="summary-weak-rank-principle" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> We investigate the proof complexity of the <b>rank principle</b>, which states that for $n < m$, the product of an $m\times n$ matrix $X$ and an $n\times m$ matrix $Y$ cannot be equal to the $m\times m$ identity matrix. The regime where $n$ is <i>much</i> smaller than $m$ is called the <b>weak</b> rank principle. We prove that the weak rank principle is hard for many proof systems such as Polynomial Calculus with Resolution (PCR) and Sherali-Adams (SA). In fact, we prove that these proof systems cannot prove the rank of <b>any</b> matrix to be small, hence establishing new proof complexity generators. We also explore the connection between weak rank principles and the (un)provability of circuit lower bounds.</div>
-<ul><li><p>In ACM Symposium on Theory of Computing (STOC) 2026</p><ul><li><a href="https://doi.org/10.1145/3798129.3800735">Proceeding version</a> (<a href="files/pdf/stoc26_wRank.pdf">local</a>), <a href="https://youtu.be/x_-C8BiZdH4">Michal's talk</a>.</li></ul></li></ul>
+<div id="summary-recent-smartEprMA" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> We prove a near-maximum ($2^n / n$) circuit lower bound for $\mathsf{E}^{\mathrm{pr}\mathsf{MA}}/_1$. In addition, our hard function can be computed with <i>smart</i> oracle access to $\mathrm{pr}\mathsf{MA}$, i.e., every query is <b>inside</b> the $\mathrm{pr}\mathsf{MA}$ promise.</div>
+<ul><li><p>In IEEE Symposium on Foundations of Computer Science (FOCS) 2026</p></li></ul>
 </div>
 
 <h2>Selected Papers</h2>
 
-<div class="paper-entry" data-tags="proof complexity,meta-complexity,TFNP">
+<div class="paper-entry" data-tags="proof complexity,meta-complexity,TFNP,bounded arithmetic">
 <p><b>Finding Bugs in Short Proofs: The Metamathematics of Resolution Lower Bounds</b>, with <a href="https://www.cs.utexas.edu/~davidlee/">Jiawei Li</a> and <a href="https://yuhao.li/">Yuhao Li</a></p>
 <ul>
 <li><p>[<a href="https://eccc.weizmann.ac.il/report/2024/190/">ECCC</a>],
 [<a href="https://arxiv.org/abs/2411.15515">arXiv</a>],
 [<a href="files/slides/slides_SJTU_rwPHP_PLS.pptx">Slides</a> at SJTU (gentle intro)],
 [<a href="files/slides/slides_Oxford_rwPHP_PLS.pptx">Slides</a> at Oxford proof complexity workshop (slightly more bounded arithmetic)],
-[<span class="title" onclick="toggle('summary-meta-complexity-of-Resolution')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
+[<span class="title" onclick="toggle('summary-selected-meta-complexity-of-Resolution')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
 </ul>
-<div id="summary-meta-complexity-of-Resolution" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> A classic result of <a href=https://doi.org/10.1016/0304-3975(85)90144-6>Haken</a> shows that any Resolution proof of the pigeonhole principle requires size $> 1.01^n$. We study the "complexity" of proving this lower bound by considering its "refuter" problem: given oracle access to a purported size-$1.01^n$ Resolution proof for the pigeonhole principle, find an illegal derivation in this Resolution proof. We show that this problem is complete for a $\mathsf{TFNP}$ class called $\mathrm{rwPHP}(\mathsf{PLS})$, which is the class corresponding to $\mathsf{NP}$ search problems provably total in $\mathsf{T}^1_2 + \mathrm{dwPHP}(\mathsf{PV})$. Indeed, the containment in $\mathrm{rwPHP}(\mathsf{PLS})$ holds for many Resolution lower bounds proven in the literature and the $\mathrm{rwPHP}(\mathsf{PLS})$-hardness holds for <i>every</i> exponential-size Resolution lower bound that is <i>true</i>.</div>
+<div id="summary-selected-meta-complexity-of-Resolution" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> A classic result of <a href=https://doi.org/10.1016/0304-3975(85)90144-6>Haken</a> shows that any Resolution proof of the pigeonhole principle requires size $> 1.01^n$. We study the "complexity" of proving this lower bound by considering its "refuter" problem: given oracle access to a purported size-$1.01^n$ Resolution proof for the pigeonhole principle, find an illegal derivation in this Resolution proof. We show that this problem is complete for a $\mathsf{TFNP}$ class called $\mathrm{rwPHP}(\mathsf{PLS})$, which is the class corresponding to $\mathsf{NP}$ search problems provably total in $\mathsf{T}^1_2 + \mathrm{dwPHP}(\mathsf{PV})$. Indeed, the containment in $\mathrm{rwPHP}(\mathsf{PLS})$ holds for many Resolution lower bounds proven in the literature and the $\mathrm{rwPHP}(\mathsf{PLS})$-hardness holds for <i>every</i> exponential-size Resolution lower bound that is <i>true</i>.</div>
 <ul><li><p>In ACM Symposium on Theory of Computing (STOC) 2026</p><ul><li><a href="https://doi.org/10.1145/3798129.3800793">Proceeding version</a> (<a href="files/pdf/stoc26_rwPHP_PLS.pdf">local</a>), <a href="files/slides/slides_STOC26_rwPHP_PLS.pptx">slides</a>, <a href="files/slides/poster_rwPHP_PLS.pdf">poster</a>.</li></ul></li></ul>
 </div>
 <div class="paper-entry" data-tags="range avoidance,proof complexity,cryptography">
@@ -180,9 +196,9 @@ function toggle(id) {
 [Independent and concurrent <a href="https://eccc.weizmann.ac.il/report/2025/190/">work</a> by <a href="https://www.rahulilango.com/">Rahul Ilango</a>],
 [<a href="files/slides/slides_demibits_Prague.pptx">Slides</a> at Prague Logic Seminar (proof complexity oriented)],
 [<a href="files/slides/slides_demibits_Princeton.pptx">Slides</a> and <a href="https://youtu.be/heBKvd52cV8">video</a> at Princeton Theory Lunch (focused on "cryptography against nondeterministic adversaries")],
-[<span class="title" onclick="toggle('summary-hardness-of-avoid')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
+[<span class="title" onclick="toggle('summary-selected-hardness-of-avoid')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
 </ul>
-<div id="summary-hardness-of-avoid" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> We show that the existence of demi-bits generators (in the sense of <a href="https://doi.org/10.1007/3-540-63248-4_8">Rudich</a>) with suitable stretch implies the range avoidance problem cannot be solved by a nondeterministic algorithm in polynomial time. We extend this result to show that similar assumptions imply proof complexity generators for every proof system, and that these proof complexity generators are <i>pseudo-surjective</i> (in the sense of <a href="https://www.karlin.mff.cuni.cz/~krajicek/dual.pdf">[Krajíček'04]</a>) in some parameter regimes.</div>
+<div id="summary-selected-hardness-of-avoid" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> We show that the existence of demi-bits generators (in the sense of <a href="https://doi.org/10.1007/3-540-63248-4_8">Rudich</a>) with suitable stretch implies the range avoidance problem cannot be solved by a nondeterministic algorithm in polynomial time. We extend this result to show that similar assumptions imply proof complexity generators for every proof system, and that these proof complexity generators are <i>pseudo-surjective</i> (in the sense of <a href="https://www.karlin.mff.cuni.cz/~krajicek/dual.pdf">[Krajíček'04]</a>) in some parameter regimes.</div>
 <ul><li><p>In Innovations in Theoretical Computer Science (ITCS) 2026, <i><b>Best Student Paper Award</b></i></p><ul><li><a href="https://doi.org/10.4230/LIPIcs.ITCS.2026.111">Proceeding version</a>.</li></ul></li></ul>
 </div>
 <div class="paper-entry" data-tags="pseudodeterministic algorithms,iterative win-win">
@@ -196,9 +212,9 @@ function toggle(id) {
 [<a href="files/slides/slides_TCSplus_pseudodet.pptx">Slides</a> and <a href="https://youtu.be/yalaX02fVow">video</a> at TCS+],
 [<a href="files/slides/slides_explicit_construction_workshop_pseudodet.pptx">Slides</a> and <a href="https://www.dropbox.com/scl/fo/21z3i726j0j3o2wmuutp6/h?e=1&preview=Workshop+4C.mov&rlkey=kupk79p7h94tyxrcq9y370fg6&dl=0">video</a> at explicit construction workshop],
 [<a href="files/slides/slides_IAS_1.pptx">Slides</a> (first half) and <a href="https://youtu.be/uxyN2eVYKic">video</a> at IAS],
-[<span class="title" onclick="toggle('summary-pseudodet-poly')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
+[<span class="title" onclick="toggle('summary-selected-pseudodet-poly')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
 </ul>
-<div id="summary-pseudodet-poly" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> We present a <b>pseudodeterministic</b> polynomial-time algorithm for constructing primes that works infinitely-often. (That is, although the algorithm is randomized, it outputs a <b>fixed</b> prime with high probability.) <a href=https://arxiv.org/abs/1612.01817>As usual(?)</a>, the only properties of primes we used are that (1) there are many primes and (2) <a href=https://doi.org/10.4007/annals.2004.160.781>PRIMES is in P</a>.</div>
+<div id="summary-selected-pseudodet-poly" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> We present a <b>pseudodeterministic</b> polynomial-time algorithm for constructing primes that works infinitely-often. (That is, although the algorithm is randomized, it outputs a <b>fixed</b> prime with high probability.) <a href=https://arxiv.org/abs/1612.01817>As usual(?)</a>, the only properties of primes we used are that (1) there are many primes and (2) <a href=https://doi.org/10.4007/annals.2004.160.781>PRIMES is in P</a>.</div>
 <ul><li><p>In Journal of the ACM; preliminary version in FOCS 2023</p><ul><li><a href="https://doi.org/10.1109/FOCS57990.2023.00074">Proceeding version</a> (<a href="files/pdf/focs23_pseudodeterministic.pdf">local</a>), <a href="files/slides/slides_FOCS23_pseudodet.pptx">slides</a>, <a href="https://www.dropbox.com/scl/fo/21z3i726j0j3o2wmuutp6/h?e=1&preview=Session+7A.mov&rlkey=kupk79p7h94tyxrcq9y370fg6&dl=0">video</a>.</li></ul></li></ul>
 </div>
 <div class="paper-entry" data-tags="range avoidance,circuit complexity,algorithmic method">
@@ -209,9 +225,9 @@ function toggle(id) {
 [<a href="files/slides/poster_avoidance.pdf">Poster</a> at Oxford Computer Science Conference],
 [<a href="files/slides/slides_ICMS_avoidance.pptx">Slides</a> and <a href="https://media.ed.ac.uk/playlist/dedicated/51612401/1_rl76d2rv/1_baw4y8ew">video</a> at ICMS (focused on proof complexity)],
 [<a href="files/slides/slides_complexity_meetings_avoidance.pptx">Slides</a> at Complexity Meetings],
-[<span class="title" onclick="toggle('summary-Avoidance')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
+[<span class="title" onclick="toggle('summary-selected-Avoidance')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
 </ul>
-<div id="summary-Avoidance" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> In the <b>range avoidance</b> problem, we are given a circuit $C:\{0, 1\}^n\to \{0, 1\}^\ell$ where $\ell > n$, and we want to find a string $y\in\{0, 1\}^\ell$ that is not in the range of $C$. Using Ryan Williams's Algorithmic Method for proving circuit lower bounds, we show that derandomisation of certain data structures would imply an ${\sf FP}^{\sf NP}$ algorithm for solving this problem. As an application of this result, we characterise circuit lower bounds for ${\sf E}^{\sf NP}$ by non-trivial derandomisation algorithms <b>with ${\sf E}^{\sf NP}$ preprocessing</b>.</div>
+<div id="summary-selected-Avoidance" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> In the <b>range avoidance</b> problem, we are given a circuit $C:\{0, 1\}^n\to \{0, 1\}^\ell$ where $\ell > n$, and we want to find a string $y\in\{0, 1\}^\ell$ that is not in the range of $C$. Using Ryan Williams's Algorithmic Method for proving circuit lower bounds, we show that derandomisation of certain data structures would imply an ${\sf FP}^{\sf NP}$ algorithm for solving this problem. As an application of this result, we characterise circuit lower bounds for ${\sf E}^{\sf NP}$ by non-trivial derandomisation algorithms <b>with ${\sf E}^{\sf NP}$ preprocessing</b>.</div>
 <ul><li><p>In IEEE Symposium on Foundations of Computer Science (FOCS) 2022</p><ul><li><a href="https://doi.org/10.1109/FOCS54457.2022.00067">Proceeding version</a> (<a href="files/pdf/focs22_avoidance.pdf">local</a>), <a href="files/slides/slides_FOCS22_avoidance.pptx">slides</a>, <a href="https://vimeo.com/user39621409/review/771296149/46488425a3">video</a>.</li></ul></li></ul>
 </div>
 

@@ -51,7 +51,7 @@ function toggle(id) {
 <td id="layout-content">
 <div id="toptitle"><h1>Publications</h1></div>
 
-<div id="tag-filter" style="margin-bottom:1em;"><b>Filter by topic:</b> <span class="tag-badge" data-tag="">all</span> <span class="tag-badge" data-tag="proof complexity">proof complexity</span> <span class="tag-badge" data-tag="range avoidance">range avoidance</span> <span class="tag-badge" data-tag="cryptography">cryptography</span> <span class="tag-badge" data-tag="circuit complexity">circuit complexity</span> <span class="tag-badge" data-tag="iterative win-win">iterative win-win</span> <span class="tag-badge" data-tag="meta-complexity">meta-complexity</span> <span class="tag-badge" data-tag="TFNP">TFNP</span> <span class="tag-badge" data-tag="relativization and algebrization">relativization and algebrization</span> <span class="tag-badge" data-tag="pseudodeterministic algorithms">pseudodeterministic algorithms</span> <span class="tag-badge" data-tag="algorithmic method">algorithmic method</span> <span class="tag-badge" data-tag="graph algorithms">graph algorithms</span> <span class="tag-badge" data-tag="average-case complexity">average-case complexity</span> &nbsp;<span id="filter-count" style="color:#666;font-size:0.9em;"></span></div>
+<div id="tag-filter" style="margin-bottom:1em;"><b>Filter by topic:</b> <span class="tag-badge" data-tag="">all</span> <span class="tag-badge" data-tag="bounded arithmetic">bounded arithmetic</span> <span class="tag-badge" data-tag="TFNP">TFNP</span> <span class="tag-badge" data-tag="proof complexity">proof complexity</span> <span class="tag-badge" data-tag="range avoidance">range avoidance</span> <span class="tag-badge" data-tag="cryptography">cryptography</span> <span class="tag-badge" data-tag="circuit complexity">circuit complexity</span> <span class="tag-badge" data-tag="iterative win-win">iterative win-win</span> <span class="tag-badge" data-tag="meta-complexity">meta-complexity</span> <span class="tag-badge" data-tag="relativization and algebrization">relativization and algebrization</span> <span class="tag-badge" data-tag="pseudodeterministic algorithms">pseudodeterministic algorithms</span> <span class="tag-badge" data-tag="algorithmic method">algorithmic method</span> <span class="tag-badge" data-tag="graph algorithms">graph algorithms</span> <span class="tag-badge" data-tag="average-case complexity">average-case complexity</span> &nbsp;<span id="filter-count" style="color:#666;font-size:0.9em;"></span></div>
 <script>
 (function () {
   var active = '';
@@ -102,9 +102,19 @@ function toggle(id) {
 })();
 </script>
 
-<h2>Publications</h2>
+<h2>Manuscripts / In submission</h2>
 
 <p><i>(In theoretical computer science, the list of authors are usually sorted in alphabetical order.)</i></p>
+<div class="paper-entry" data-tags="bounded arithmetic,TFNP">
+<p><b>Approximate Counting and the Provability of Combinatorial Principles</b>, with <a href="https://www.oliverkorten.com/">Oliver Korten</a>, <a href="https://ljt12138.github.io/">Jiatu Li</a>, and <a href="https://www.dcs.warwick.ac.uk/~igorcarb/">Igor C. Oliveira</a></p>
+<ul>
+<li><p>[<a href="https://youtu.be/XX5GDU1AswI">Video</a>],
+[<span class="title" onclick="toggle('summary-APX-vs-APC')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
+</ul>
+<div id="summary-APX-vs-APC" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> Our main result is that in the relativized setting, the theory $\mathsf{APX}_1$ (defined in <a href="https://arxiv.org/abs/2602.09302">[CLOW'26]</a>) does not prove the retraction weak pigeonhole principle. Hence $\mathsf{APC}_1$ is not $\forall\Sigma_1^b$-conservative over $\mathsf{APX}_1$ in the relativized setting. We also extend this unprovability result to a large family of combinatorial principles in the style of <a href="https://www.brics.dk/RS/94/23/BRICS-RS-94-23.pdf">Riis</a>.</div>
+</div>
+<h2>Publications</h2>
+
 <div class="paper-entry" data-tags="proof complexity,range avoidance,cryptography">
 <p><b>Many Proof Complexity Generators Inside One Demi-Bits Generator</b>, with <a href="https://www.cs.jhu.edu/~lixints/">Xin Li</a> and <a href="https://www.yan-zhong.com/">Yan Zhong</a></p>
 <ul>
@@ -115,7 +125,7 @@ function toggle(id) {
 [<span class="title" onclick="toggle('summary-many-PCGs')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
 </ul>
 <div id="summary-many-PCGs" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> For every demi-bits generator $G: \{0, 1\}^n \to \{0, 1\}^m$ ($m \ge 10n$) and every proof system $\mathcal{P}$, we show that a random subset of its outputs ($G|_I$, $I\gets 2^{[m]}$) forms a proof complexity generator for $\mathcal{P}$ with constant probability. This result is an <b>extremely simple</b> corollary of the <a href="https://en.wikipedia.org/wiki/Sauer%E2%80%93Shelah_lemma">Sauer–Shelah lemma</a>. Based on this result, we prove hardness of $\mathsf{NC}^0$-$\mathrm{Avoid}$ and $\mathsf{XOR}$-$\mathrm{RemotePoint}$ based on various hardness assumptions against nondeterministic algorithms.</div>
-<ul><li><p>To appear in IEEE Symposium on Foundations of Computer Science (FOCS) 2026</p></li></ul>
+<ul><li><p>In IEEE Symposium on Foundations of Computer Science (FOCS) 2026</p></li></ul>
 </div>
 <div class="paper-entry" data-tags="circuit complexity,iterative win-win,range avoidance">
 <p><b>Near-Maximum Circuit Lower Bounds for Exponential Time with Merlin-Arthur Queries</b>, with <a href="https://people.csail.mit.edu/rrw/">Ryan Williams</a></p>
@@ -126,9 +136,9 @@ function toggle(id) {
 [<span class="title" onclick="toggle('summary-smartEprMA')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
 </ul>
 <div id="summary-smartEprMA" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> We prove a near-maximum ($2^n / n$) circuit lower bound for $\mathsf{E}^{\mathrm{pr}\mathsf{MA}}/_1$. In addition, our hard function can be computed with <i>smart</i> oracle access to $\mathrm{pr}\mathsf{MA}$, i.e., every query is <b>inside</b> the $\mathrm{pr}\mathsf{MA}$ promise.</div>
-<ul><li><p>To appear in IEEE Symposium on Foundations of Computer Science (FOCS) 2026</p></li></ul>
+<ul><li><p>In IEEE Symposium on Foundations of Computer Science (FOCS) 2026</p></li></ul>
 </div>
-<div class="paper-entry" data-tags="proof complexity,meta-complexity,TFNP">
+<div class="paper-entry" data-tags="proof complexity,meta-complexity,TFNP,bounded arithmetic">
 <p><b>Finding Bugs in Short Proofs: The Metamathematics of Resolution Lower Bounds</b>, with <a href="https://www.cs.utexas.edu/~davidlee/">Jiawei Li</a> and <a href="https://yuhao.li/">Yuhao Li</a></p>
 <ul>
 <li><p>[<a href="https://eccc.weizmann.ac.il/report/2024/190/">ECCC</a>],
@@ -188,7 +198,7 @@ function toggle(id) {
 <ul><li><p>In Innovations in Theoretical Computer Science (ITCS) 2026</p><ul><li><a href="https://doi.org/10.4230/LIPIcs.ITCS.2026.37">Proceeding version</a>.</li></ul></li></ul>
 </div>
 <div class="paper-entry" data-tags="range avoidance">
-<p><b>On the Complexity of Avoiding Heavy Elements</b>, with <a href="https://luzhenjian.github.io/">Zhenjian Lu</a>, <a href="https://www.dcs.warwick.ac.uk/~igorcarb/">Igor Oliveira</a>, and <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/">Rahul Santhanam</a></p>
+<p><b>On the Complexity of Avoiding Heavy Elements</b>, with <a href="https://luzhenjian.github.io/">Zhenjian Lu</a>, <a href="https://www.dcs.warwick.ac.uk/~igorcarb/">Igor C. Oliveira</a>, and <a href="https://www.cs.ox.ac.uk/people/rahul.santhanam/">Rahul Santhanam</a></p>
 <ul>
 <li><p>[<a href="https://eccc.weizmann.ac.il/report/2024/115/">ECCC</a>],
 [<span class="title" onclick="toggle('summary-heavy-Avoid')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
@@ -334,7 +344,7 @@ As a corollary, we present $\mathsf{FP}^{\mathsf{NP}}$ algorithms for $\mathsf{A
 [<a href="https://arxiv.org/abs/2308.08870">Karczmarz and Sankowski's improvement</a>],
 [<span class="title" onclick="toggle('summary-Faster-DSO')" style="cursor:pointer;"><font color="red">Summary</font></span>]</p></li>
 </ul>
-<div id="summary-Faster-DSO" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> We improve the construction time of distance sensitivity oracles for direct graphs to $O(n^{2.5794}M)$, where $n$ is the number of vertices, and the edge weights are integers in $<a href="1,">M</a>$. The new ingredients are a faster algorithm for inverting a polynomial matrix modulo $x^r$, adapted from <a href='https://doi.org/10.1016/j.jco.2014.09.004'>[ZLS'15]</a>, and an algorithm that computes <b>consistent</b> shortest path trees in current APSP time.</div>
+<div id="summary-Faster-DSO" style="display:none; border:1pt solid; padding: 5px; background-color:lavender; margin: 4px 0;"><b>Summary:</b> We improve the construction time of distance sensitivity oracles for direct graphs to $O(n^{2.5794}M)$, where $n$ is the number of vertices, and the edge weights are integers in $[1, M]$. The new ingredients are a faster algorithm for inverting a polynomial matrix modulo $x^r$, adapted from <a href='https://doi.org/10.1016/j.jco.2014.09.004'>[ZLS'15]</a>, and an algorithm that computes <b>consistent</b> shortest path trees in current APSP time.</div>
 <ul><li><p>In International Colloquium on Automata, Languages and Programming (ICALP) 2021</p><ul><li><a href="https://doi.org/10.4230/LIPIcs.ICALP.2021.76">Proceeding version</a> (<a href="files/pdf/icalp21_faster_DSO.pdf">local</a>), <a href="files/slides/slides_ICALP21_faster_DSO.pptx">slides</a>, <a href="http://youtu.be/uIFoucab6d4">video</a>.</li></ul></li></ul>
 </div>
 <div class="paper-entry" data-tags="graph algorithms">
